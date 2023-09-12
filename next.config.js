@@ -5,7 +5,7 @@ const nextConfig = {
             enabled: true,
             silent: true,
        },
-    };
+    }
 }
 
 module.exports = nextConfig
