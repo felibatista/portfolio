@@ -1,6 +1,4 @@
-import TailwindColor from "@/lib/AutoColor";
 import { Badge } from "./ui/Badge";
-import clsx from "clsx";
 import { Dispatch, SetStateAction } from "react";
 
 export interface CardTechs {
