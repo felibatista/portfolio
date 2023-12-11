@@ -2,11 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,ts,tsx}',
-    './components/**/*.{js,ts,tsx}',
-    './app/**/*.{js,ts,tsx}',
-    './src/**/*.{js,ts,tsx}',
-	],
+    "./pages/**/*.{js,ts,tsx}",
+    "./components/**/*.{js,ts,tsx}",
+    "./app/**/*.{js,ts,tsx}",
+    "./src/**/*.{js,ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -62,6 +62,26 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        "scale-in-center": {
+          "0%": {
+            transform: "scale(0)",
+            opacity: "1",
+          },
+          to: {
+            transform: "scale(1)",
+            opacity: "1",
+          },
+        },
+        "scale-out-center": {
+          "0%": {
+            transform: "scale(1)",
+            opacity: "1",
+          },
+          to: {
+            transform: "scale(0)",
+            opacity: "1",
+          },
+        },
         "color-change-4x": {
           "0%": {
             background: "#19dcea",
@@ -89,8 +109,12 @@ module.exports = {
         "color-change-4x": "color-change-4x 6s linear  infinite alternate both",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "scale-in-center":
+          "scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both",
+        "scale-out-center":
+          "scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530)   both",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

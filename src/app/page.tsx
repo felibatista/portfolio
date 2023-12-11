@@ -1,7 +1,9 @@
-"use client";
+import { Navbar } from "@/components/navbar";
 
-import HomeGlobal from "../components/Home";
-
-export default function Home() {
-  return <HomeGlobal></HomeGlobal>;
+export default function Page() {
+  return (
+    <div className="relative">
+      <Navbar />
+    </div>
+  )
 }

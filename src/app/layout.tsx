@@ -1,22 +1,25 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { cn } from "@/lib/utils";
+import "./globals.css";
+import type { Metadata } from "next";
+import { Rubik } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Rubik({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Portfolio | Felipe Batista',
-  description: 'Información sobre mis proyectos y habilidades',
-}
+  title: "Portfolio | Felipe Batista",
+  description: "Información sobre mis proyectos y habilidades",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="es">
-      <body className={inter.className}>{children}</body>
+      <body className={cn(inter.className, "bg-[#242428] text-white")}>
+        <main className="max-w-[1300px] mx-auto px-4">{children}</main>
+      </body>
     </html>
-  )
+  );
 }
