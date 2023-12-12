@@ -9,9 +9,19 @@ import { AnimatePresence, motion, useCycle } from "framer-motion";
 import { MenuToggle } from "./menu-toggle";
 import { NAVBAR_ITEMS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import { useEffect } from "react";
 
 export function MenuTrigger() {
   const [open, toggleOpen] = useCycle(false, true);
+
+  //remove overflow hidden from body when menu is open
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [open]);
 
   return (
     <div>
