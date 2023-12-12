@@ -17,7 +17,7 @@ export function MenuTrigger() {
     <div>
       <motion.div
         animate={open ? "open" : "closed"}
-        className="ml-6 hover:scale-105 absolute top-1 bottom-0 z-20 flex items-center"
+        className="ml-6 hover:scale-105 right-0 absolute top-1 bottom-0 z-20 flex items-center"
       >
         <MenuToggle toggle={() => toggleOpen()} />
       </motion.div>
@@ -42,7 +42,7 @@ export function MenuTrigger() {
                 opacity: 1,
                 transition: { duration: 0.2, delay: 0.1 },
               }}
-              className="flex flex-col justify-center items-center h-full font-semibold text-[60px]"
+              className="flex flex-col justify-center items-center h-full font-semibold text-[40px] md:text-[50px] lg:text-[60px]"
             >
               {NAVBAR_ITEMS.map((item) => (
                 <li key={item.name}>

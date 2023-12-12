@@ -17,7 +17,7 @@ export function ContainerItems() {
 
   return (
     <div
-      className="flex gap-4 relative"
+      className="hidden md:flex gap-4 relative mr-10"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
