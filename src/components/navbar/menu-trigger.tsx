@@ -14,7 +14,6 @@ import { useEffect } from "react";
 export function MenuTrigger() {
   const [open, toggleOpen] = useCycle(false, true);
 
-  //remove overflow hidden from body when menu is open
   useEffect(() => {
     if (open) {
       document.body.style.overflow = "hidden";
