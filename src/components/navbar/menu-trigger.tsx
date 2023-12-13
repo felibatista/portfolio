@@ -35,8 +35,7 @@ export function MenuTrigger() {
         {open && (
           <motion.div
             exit={{
-              opacity: 0,
-              scale: 0.5,
+              scale: 0,
               transition: { duration: 0.2 },
               borderRadius: "100%",
             }}

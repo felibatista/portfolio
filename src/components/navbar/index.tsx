@@ -3,7 +3,7 @@ import { MenuTrigger } from "./menu-trigger";
 
 export function Navbar() {
   return (
-    <nav className="flex justify-end py-4 my-8 items-center relative">
+    <nav className="flex justify-end py-4 my-8 items-center relative z-10">
       <ContainerItems/>
       <MenuTrigger/>
     </nav>
