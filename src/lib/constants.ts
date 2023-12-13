@@ -24,37 +24,44 @@ export const NAVBAR_ITEMS = [
 export const SOCIAL_LINKS = [
   {
     name: "Github",
-    path: "",
+    link: "https://github.com/felibatista",
+    copy: false,
     icon: "/icons/github.svg",
   },
   {
     name: "Linkedin",
-    path: "",
+    link: "https://www.linkedin.com/in/felibatista/",
+    copy: false,
     icon: "/icons/linkedin.svg",
   },
   {
     name: "Twitter",
-    path: "",
+    link: "https://twitter.com/felibatista_",
+    copy: false,
     icon: "/icons/twitter.svg",
   },
   {
     name: "Instagram",
-    path: "",
+    link: "https://www.instagram.com/felibatista_/",
+    copy: false,
     icon: "/icons/instagram.svg",
   },
   {
     name: "Discord",
-    path: "",
+    link: "felibatista#0001",
+    copy: false,
     icon: "/icons/discord.svg",
   },
   {
     name: "Whatsapp",
-    path: "",
+    link: "+54 9 341 310 7794",
+    copy: false,
     icon: "/icons/whatsapp.svg",
   },
   {
     name: "Email",
-    path: "",
+    link: "hellojavaa@gmail.com",
+    copy: false,
     icon: "/icons/email.svg",
   },
 ];

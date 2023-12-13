@@ -32,7 +32,18 @@ export function Follow() {
                 isHover ? "opacity-30 hover:opacity-100 cursor-pointer" : ""
               )}
             >
-              <img src={item.icon} alt={item.name} className="w-10 h-10" />
+              {item.copy ? (
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10"
+                >
+                  <img src={item.icon} alt={item.name} className="w-10 h-10" />
+                </a>
+              ) : (
+                <img src={item.icon} alt={item.name} className="w-10 h-10" />
+              )}
             </motion.li>
           ))}
         </ul>
