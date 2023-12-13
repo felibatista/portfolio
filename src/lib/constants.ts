@@ -116,3 +116,30 @@ export const SKILLS = [
     description: "+1 años de experiencia",
   },
 ];
+
+export const PROJECTS = [
+  {
+    name: "Conversor de monedas",
+    description:
+      "CRUD completo con sistema de suscripción y gestión de todos sus micro-servicios. Cuenta con experiencia de usuario y un panel de administración para gestionar las monedas, conversiones, usuarios, suscripciones y las tasas de cambio.",
+    image: "/projects/project1.png",
+    techs: [".NET", "Angular", "SQLite"],
+    link: "https://assets-global.website-files.com/622fbc5a718ac357e4cd3da3/623227a7644f41349873cd60_defi-thumbnail-image-developer-webflow-ecommerce-template-p-500.png",
+  },
+  {
+    name: "URL Shortener",
+    description:
+      "Sistema de acortamiento de URL con sistema de autenticación y gestión de usuarios. Cuenta con un panel de administración para gestionar las URL, usuarios y suscripciones.",
+    image: "/projects/project1.png",
+    techs: [".NET", "React", "Next.js", "Postgres SQL"],
+    link: "https://assets-global.website-files.com/622fbc5a718ac357e4cd3da3/623227a7644f41349873cd60_defi-thumbnail-image-developer-webflow-ecommerce-template-p-500.png",
+  },
+  {
+    name: "Conversor de monedas",
+    description:
+      "CRUD completo con sistema de suscripción y gestión de todos sus micro-servicios. Cuenta con experiencia de usuario y un panel de administración para gestionar las monedas, conversiones, usuarios, suscripciones y las tasas de cambio.",
+    image: "/projects/project1.png",
+    techs: [".NET", "Angular", "SQLite"],
+    link: "https://assets-global.website-files.com/622fbc5a718ac357e4cd3da3/623227a7644f41349873cd60_defi-thumbnail-image-developer-webflow-ecommerce-template-p-500.png",
+  },
+];
