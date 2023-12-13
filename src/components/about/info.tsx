@@ -12,9 +12,9 @@ export function Info() {
       </h4>
 
       <p className="text-[22px] lg:text-[20px] text-center md:text-left">
-        Comencé con Java y servidores en Minecraft. Desde entonces he estado
+      {`Comencé con Java y servidores en Minecraft. Desde entonces he estado
         aprendiendo y desarrollando mis habilidades. Mi orientación fue elegida
-        por la curiosidad de saber como funcionaba todo por "debajo del capó".
+        por la curiosidad de saber como funcionaba todo por "debajo del capó"`}
       </p>
 
       <ButtonLink name="MÁS SOBRE MI" href="/about" className="text-xl" />
