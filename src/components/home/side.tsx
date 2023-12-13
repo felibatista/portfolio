@@ -1,9 +1,16 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { ButtonLink } from "../link";
 import { Follow } from "./follow";
 
 export function Side() {
   return (
-    <div className="flex flex-col gap-6 md:justify-end md:w-[70%] mt-[4rem] ml-auto">
+    <motion.div
+      initial={{ opacity: 0, x: 100 }}
+      animate={{ opacity: 1, x: 0, transition: { duration: 0.4, delay: 0.4 } }}
+      className="flex flex-col gap-6 md:justify-end md:w-[70%] mt-[4rem] ml-auto"
+    >
       <div className="flex flex-col gap-2 pb-6 border-b border-white border-opacity-30">
         <h2 className="font-semibold text-xl">SOBRE MI </h2>
         <p className="text-[22px] md:text-base">
@@ -25,6 +32,6 @@ export function Side() {
       </div>
 
       <Follow />
-    </div>
+    </motion.div>
   );
 }

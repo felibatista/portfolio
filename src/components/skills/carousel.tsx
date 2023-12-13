@@ -9,12 +9,18 @@ import {
   ButtonNext,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import { Card } from "./card";
+import { SkillCard } from "./card";
 import { SKILLS } from "@/lib/constants";
+import { motion } from "framer-motion";
 
 export function Carousel() {
   return (
-    <div className="px-0 md:mt-10 m-0">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.2 } }}
+      viewport={{ once: true }}
+      className="px-0 md:mt-10 m-0"
+    >
       <div className="flex items-center justify-center w-full h-full py-12 sm:py-8">
         {/* Carousel for desktop and large size devices */}
         <CarouselProvider
@@ -58,7 +64,7 @@ export function Carousel() {
                 >
                   {SKILLS.map((item, index) => (
                     <Slide key={index} index={index - 1}>
-                      <Card
+                      <SkillCard
                         key={index}
                         title={item.name}
                         image={item.icon}
@@ -432,7 +438,7 @@ export function Carousel() {
                 >
                   {SKILLS.map((item, index) => (
                     <Slide key={index} index={index - 1}>
-                      <Card
+                      <SkillCard
                         key={index}
                         title={item.name}
                         image={item.icon}
@@ -468,6 +474,6 @@ export function Carousel() {
           </div>
         </CarouselProvider>
       </div>
-    </div>
+    </motion.div>
   );
 }
