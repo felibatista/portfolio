@@ -11,8 +11,8 @@ export function Projects() {
   const [hover, setHover] = useState("");
 
   return (
-    <div className="bg-[#18181b] flex items-center snap-start z-10">
-      <Section className="mt-[10rem] max-h-[1500px]">
+    <div className="bg-[#18181b] flex items-center snap-start z-10 pb-[10rem]">
+      <Section className="mt-[10rem]">
         <div className="grid md:grid-cols-2 grid-rows-4 grid-cols-1 md:gap-16 gap-0 md:mt-0 space-y-12">
           <ProjectsTitle />
           {PROJECTS.map((project) => (

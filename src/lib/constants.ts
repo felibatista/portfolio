@@ -150,3 +150,37 @@ export const PROJECTS = [
     link: "https://assets-global.website-files.com/622fbc5a718ac357e4cd3da3/623227a7644f41349873cd60_defi-thumbnail-image-developer-webflow-ecommerce-template-p-500.png",
   },
 ];
+
+export const DOCUMENTATIONS = [
+  {
+    URL: {
+      name: "URL Shortener",
+      description: "Sistema de acortamiento de URL con sistema de autenticación y gestión de usuarios. Cuenta con un panel de administración para gestionar las URL, usuarios y suscripciones.",
+      image: "/projects/project1.png",
+      techs: [".NET", "React", "Next.js", "Postgres SQL"],
+      link: "https://assets-global.website-files.com/622fbc5a718ac357e4cd3da3/623227a7644f41349873cd60_defi-thumbnail-image-developer-webflow-ecommerce-template-p-500.png",
+      API: {
+        XYZ: {
+          GET: {
+            description: "Obtener todas las URL",
+            type: "GET",
+            params: [],
+            response: {
+              code: 200,
+              body: [
+                {
+                  id: "string",
+                  url: "string",
+                  shortUrl: "string",
+                  userId: "string",
+                  createdAt: "string",
+                  updatedAt: "string",
+                },
+              ],
+            },
+          },
+        },
+      },
+    }
+  },
+];
