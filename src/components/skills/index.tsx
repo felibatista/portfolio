@@ -7,7 +7,7 @@ import { Carousel } from "./carousel";
 
 export function Skills() {
   return (
-    <div className="h-screen snap-center shrink-0">
+    <div className="md:h-screen snap-center shrink-0">
       <Section className="mt-10">
         <div className="flex md:gap-16 gap-8 mt-10 md:mt-0 items-center">
           <div className="flex flex-col">

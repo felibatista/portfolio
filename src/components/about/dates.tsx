@@ -8,15 +8,15 @@ export function Date() {
       whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
       viewport={{ once: true }}
     >
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 font-bold text-[25px] leading-[1.1]">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 font-bold text-[25px] leading-[1.1] mt-[5rem] md:mt-0 ">
         <div className="flex items-center gap-2 font-bold justify-center md:justify-start">
           <h3 className="text-[4rem]">+4</h3>
           <p>años de experiencia</p>
         </div>
 
-        <div className="flex items-center gap-2 font-bold justify-center md:justify-star">
+        <div className="flex items-center gap-2 font-bold justify-center md:justify-start">
           <h3 className="text-[4rem]">+10</h3>
-          <p>proyectos personales terminados</p>
+          <p>proyectos terminados</p>
         </div>
       </div>
 

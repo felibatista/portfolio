@@ -407,7 +407,7 @@ export function Carousel() {
           infinite={true}
           naturalSlideHeight={0}
         >
-          <div className="w-full relative flex items-center justify-center max-w-[30rem]">
+          <div className="w-full relative flex items-center justify-center max-w-[20rem]">
             <ButtonBack
               role="button"
               aria-label="slide backward"

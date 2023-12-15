@@ -9,6 +9,8 @@ import { Navbar } from "@/components/navbar";
 import { Projects } from "@/components/projects";
 import { Skills } from "@/components/skills";
 import { motion } from "framer-motion";
+import { Contact } from "@/components/contact";
+import { Footer } from "@/components/footer";
 
 export default function Page() {
   return (
@@ -37,6 +39,10 @@ export default function Page() {
       <Skills />
 
       <Projects />
+
+      <Contact />
+
+      <Footer />
     </div>
   );
 }
