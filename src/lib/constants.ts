@@ -1,7 +1,7 @@
 export const NAVBAR_ITEMS = [
   {
     name: "Inicio",
-    path: "",
+    path: "/",
   },
   {
     name: "Información",
