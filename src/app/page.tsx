@@ -14,7 +14,7 @@ import { Footer } from "@/components/footer";
 
 export default function Page() {
   return (
-    <div className="relative snap-mandatory snap-y h-screen scroll-smooth">
+    <div className="relative">
       <Section className="flex-col relative overflow-hidden snap-center">
         <motion.div
           initial={{ opacity: 0, y: -100 }}
