@@ -3,6 +3,7 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+export const dynamic = 'force-dynamic'
 export async function POST(request: Request) {
   const { searchParams } = new URL(request.url);
 
@@ -17,16 +18,19 @@ export async function POST(request: Request) {
     );
   }
 
-  try {
-    await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
-      to: ["hellojavaa@gmail.com"],
-      subject: "PORTOFOLIO - " + name + " - " + email,
-      text: "" + message,
-    });
+  const mail = await resend.emails.send({
+    from: "Acme <onboarding@resend.dev>",
+    to: ["hellojavaa@gmail.com"],
+    subject: "PORTOFOLIO - " + name + " - " + email,
+    text: "" + message,
+  });
 
-    return NextResponse.json({ success: true, message: "Email sent" });
-  } catch (error) {
-    return NextResponse.error();
+  if (mail.error) {
+    return NextResponse.json(
+      { success: false, message: "Error sending email" },
+      { status: 500 }
+    );
   }
+
+  return NextResponse.json({ success: true, message: "Email sent" });
 }

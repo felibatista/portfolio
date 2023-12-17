@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Rubik({ subsets: ["latin"] });
 

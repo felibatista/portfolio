@@ -11,10 +11,12 @@ import { Skills } from "@/components/skills";
 import { motion } from "framer-motion";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
+import { Toaster } from "@/components/ui/toaster";
 
 export default function Page() {
   return (
     <div className="relative">
+      <Toaster />
       <Section className="flex-col relative overflow-hidden snap-center">
         <motion.div
           initial={{ opacity: 0, y: -100 }}
