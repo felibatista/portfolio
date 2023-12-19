@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-export function MeGo() {
+export function MeActual() {
   return (
     <motion.div
       initial={{ opacity: 0, x: 100 }}
@@ -11,20 +11,19 @@ export function MeGo() {
       className="flex flex-col gap-4 items-center lg:items-start pb-[2rem] lg:pb-0"
     >
       <h3 className="font-semibold text-xl flex items-center mb-4">
-        <span className="font-extrabold md:mr-2 text-4xl text-[#7d6b6b]">
+        <span className="font-extrabold lg:mr-2 text-4xl text-[#7d6b6b]">
           /
         </span>
-        AÑOS DESPUÉS
+        ACTUALIDAD
       </h3>
       <h4 className="font-bold text-[45px] lg:text-[50px] leading-[1.1] lg:text-start text-center">
-        Siguiendo con el desarrollo web
+        Mejorando mis habilidades
       </h4>
 
       <p className="text-[22px] lg:text-[20px] text-center lg:text-left">
-        {`En el año 2020, comencé por las bases
-        de HTML, CSS y JavaScript. Luego de eso, empecé a aprender React y Next.js,
-        con los cuales hice mis primeros proyectos y páginas web. También me interesó
-        Angular y Vue, y aunque no sean mis favoritos, pude aprender bastante de ellos.
+        {`Actualmente, me decidí por el mundo back-end, siento que es el lugar donde más disfruto programar. 
+        Voy en progreso con proyectos personales, y también estoy aprendiendo nuevas tecnologías,
+        tales como Django y Laravel, que son frameworks que me llaman mucho la atención. 
         `}
       </p>
     </motion.div>

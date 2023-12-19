@@ -8,12 +8,12 @@ import { motion } from "framer-motion";
 
 export function AboutPageHero() {
   return (
-    <Section className="w-full relative flex-col">
+    <Section className="w-full relative flex-col overflow-hidden">
       <Navbar />
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
-        className="flex flex-col items-center justify-center w-full z-10 flex-1"
+        className="flex flex-col items-center justify-center w-full z-[11] flex-1 md:pb-[6rem]"
       >
         <h3 className="font-semibold text-xl flex items-center mb-4">
           <span className="font-extrabold md:mr-2 text-4xl text-[#7d6b6b]">
@@ -21,7 +21,7 @@ export function AboutPageHero() {
           </span>
           SOBRE MI
         </h3>
-        <h1 className="font-bold text-[45px] lg:text-[50px] leading-[1.1] pb-2">
+        <h1 className="font-bold text-[45px] lg:text-[50px] leading-[1.1] pb-2 text-center">
           Mi vida en <span className="text-[#b19797]">detalle</span>
         </h1>
         <p className="mt-4 text-[22px] lg:text-[20px] text-center flex h-fit">
@@ -35,11 +35,53 @@ export function AboutPageHero() {
             const element = document.querySelector("#me");
             element?.scrollIntoView({ behavior: "smooth" });
           }}
-          className="rounded-xl mt-[4rem] border-white border px-1 py-2 cursor-pointer hover:scale-105 transition-all opacity-70"
+          className="rounded-xl mt-[3rem] border-white border px-1 py-2 cursor-pointer hover:scale-105 transition-all opacity-70"
         >
           <ChevronDownIcon className="w-6 h-6 animate-bounce" />
         </button>
       </motion.div>
+
+      <div className="hidden lg:block absolute w-full h-full">
+
+        <motion.img
+          initial={{ opacity: 0, rotate: 0 }}
+          animate={{
+            opacity:  1,
+            transition: { duration: 0.6, delay: 0.4 },
+          }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="absolute hidden md:block z-[1] h-[400px] bottom-[-10rem] right-[8rem]"
+          src="/about/arg-flag.svg"
+          alt=""
+        />
+
+        <motion.img
+          initial={{ opacity: 0, rotate: 0 }}
+          animate={{
+            opacity: 1,
+            transition: { duration: 0.6 },
+          }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="absolute hidden md:block mx-auto z-[10] h-[400px] bottom-[-10rem] left-0 right-0"
+          src="/about/coding.svg"
+          alt=""
+        />
+
+        <motion.img
+          initial={{ opacity: 0, rotate: 0 }}
+          animate={{
+            opacity: 1,
+            transition: { duration: 0.6, delay: 0.2 },
+          }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="absolute hidden md:block  mx-auto z-[1] h-[400px]  bottom-[-14rem] left-[7rem]"
+          src="/about/pc.svg"
+          alt=""
+        />
+      </div>
     </Section>
   );
 }

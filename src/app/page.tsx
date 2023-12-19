@@ -4,7 +4,6 @@ import Section from "@/components/section";
 
 import { About } from "@/components/about";
 import { Home } from "@/components/home";
-import { Hero } from "@/components/home/hero";
 import { Navbar } from "@/components/navbar";
 import { Projects } from "@/components/projects";
 import { Skills } from "@/components/skills";
@@ -27,7 +26,7 @@ export default function Page() {
           <img
             src="me.png"
             alt=""
-            className="absolute hidden md:block bottom-[-4rem] mx-auto left-[50%] translate-x-[-50%] h-[1000px] z-[1] opacity-20"
+            className="absolute hidden md:block bottom-[-4rem] mx-auto left-[50%] translate-x-[-50%] h-[1000px] z-[1] opacity-40"
           />
         </motion.div>
         <Navbar />
