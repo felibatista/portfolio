@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 
@@ -23,15 +25,21 @@ export function ProjectCard({
   };
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.2 }}
       className={cn(
         "flex flex-col gap-4 items-center md:items-start row-span-2 h-full group hover:scale-105 transform transition-all duration-300 cursor-pointer",
         hover !== name && hover !== "" ? "opacity-30" : "opacity-100"
       )}
-      onMouseEnter={handleHover}
-      onMouseLeave={() => setHover("")}
     >
-      <div className="rounded-xl bg-[#242428] w-full flex flex-col h-full overflow-hidden">
+      <div
+        className="rounded-xl bg-[#242428] w-full flex flex-col h-full overflow-hidden"
+        onMouseEnter={handleHover}
+        onMouseLeave={() => setHover("")}
+      >
         <div className="p-8">
           <div className="flex gap-4">
             {techs.map((tech) => (
@@ -55,6 +63,6 @@ export function ProjectCard({
           className="w-full h-full object-cover rounded-xl group-hover:scale-110 transform transition-all duration-300"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }

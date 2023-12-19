@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useToast } from "../ui/use-toast";
+import { motion } from "framer-motion";
 
 export function ContactForm() {
   const { toast } = useToast();
@@ -81,7 +82,11 @@ export function ContactForm() {
   };
 
   return (
-    <div className="flex mt-10 md:mt-0 flex-col gap-6 [&>div>h4]:font-semibold [&>div>input]:bg-transparent [&>div>input]:border [&>div>input]:border-gray-300 [&>div>input]:rounded-xl [&>div>input]:p-2 [&>div>input]:border-opacity-50 [&>div]:flex [&>div]:flex-col [&>div]:gap-2">
+    <motion.div 
+    initial={{ opacity: 0, x: 100 }}
+    whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
+    viewport={{ once: true }}
+    className="flex mt-10 md:mt-0 flex-col gap-6 [&>div>h4]:font-semibold [&>div>input]:bg-transparent [&>div>input]:border [&>div>input]:border-gray-300 [&>div>input]:rounded-xl [&>div>input]:p-2 [&>div>input]:border-opacity-50 [&>div]:flex [&>div]:flex-col [&>div]:gap-2">
       <div>
         <h4>Nombre y apellido</h4>
 
@@ -142,6 +147,6 @@ export function ContactForm() {
       >
         Enviar mensaje{loading && "..."}
       </button>
-    </div>
+    </motion.div>
   );
 }

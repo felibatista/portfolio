@@ -1,8 +1,10 @@
-import { cn } from "@/lib/utils";
 import "./globals.css";
-import type { Metadata } from "next";
+
+import { cn } from "@/lib/utils";
 import { Rubik } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
+
+import type { Metadata } from "next";
 
 const inter = Rubik({ subsets: ["latin"] });
 

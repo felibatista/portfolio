@@ -15,8 +15,8 @@ export function Projects() {
       <Section className="mt-[10rem]">
         <div className="grid md:grid-cols-2 grid-rows-4 grid-cols-1 md:gap-16 gap-0 md:mt-0 space-y-12">
           <ProjectsTitle />
-          {PROJECTS.map((project) => (
-            <ProjectCard key={project.name} {...project} hover={hover} setHover={setHover} />
+          {PROJECTS.map((project,index) => (
+            <ProjectCard key={index} {...project} hover={hover} setHover={setHover} />
           ))}
         </div>
       </Section>
