@@ -3,8 +3,11 @@
 import { useState } from "react";
 import { useToast } from "../ui/use-toast";
 import { motion } from "framer-motion";
+import { Resend } from 'resend';
+
 
 export function ContactForm() {
+  //const resend = new Resend(process.env.RESEND_API_KEY);
   const { toast } = useToast();
 
   const [loading, setLoading] = useState(false);
@@ -48,12 +51,25 @@ export function ContactForm() {
       return;
     }
 
+    /*const mail = await resend.emails.send({
+      from: "Acme <onboarding@resend.dev>",
+      to: ["hellojavaa@gmail.com"],
+      subject: "PORTOFOLIO - " + name + " - " + email,
+      text: "" + message,
+    });*/
+    
     const sendEmail = await fetch(
-      "/api/resend?name=" + name + "&email=" + email + "&message=" + message,
+      "https://www.acentus.agency/api/resend?email=" +
+        email +
+        "&description=" +
+        message +
+        "&type=" +
+        name,
       {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          'Access-Control-Allow-Origin': '*',
         },
       }
     );
