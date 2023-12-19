@@ -3,11 +3,13 @@
 import { SOCIAL_LINKS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
+import { createElement, useState } from "react";
+import { toast } from "../ui/use-toast";
 
 export function Follow() {
   const [isHover, setIsHover] = useState(false);
   const [data, setData] = useState<string>("");
+  const [link, setLink] = useState<string>("");
 
   function handleMouseEnter() {
     setIsHover(true);
@@ -15,6 +17,16 @@ export function Follow() {
 
   function handleMouseLeave() {
     setIsHover(false);
+  }
+
+  function handleToast(link: string) {
+    toast({
+      className: "bg-[#18181b] text-white border-0",
+      title: "¡Datos copiados al portapapeles correctamente!",
+      description: "Contenido: " + link,
+    });
+
+    navigator.clipboard.writeText(link);
   }
 
   return (
@@ -32,7 +44,7 @@ export function Follow() {
                 isHover ? "opacity-30 hover:opacity-100 cursor-pointer" : ""
               )}
             >
-              {item.copy ? (
+              {!item.copy ? (
                 <a
                   href={item.link}
                   target="_blank"
@@ -42,7 +54,7 @@ export function Follow() {
                   <img src={item.icon} alt={item.name} className="w-10 h-10" />
                 </a>
               ) : (
-                <img src={item.icon} alt={item.name} className="w-10 h-10" />
+                <img onClick={() => handleToast(item.link)} src={item.icon} alt={item.name} className="w-10 h-10" />
               )}
             </motion.li>
           ))}

@@ -4,8 +4,8 @@ export const NAVBAR_ITEMS = [
     path: "/",
   },
   {
-    name: "Información",
-    path: "info",
+    name: "Sobre mi",
+    path: "about",
   },
   {
     name: "Proyectos",
@@ -48,20 +48,20 @@ export const SOCIAL_LINKS = [
   },
   {
     name: "Discord",
-    link: "felibatista#0001",
-    copy: false,
+    link: "felibatista_",
+    copy: true,
     icon: "/icons/discord.svg",
   },
   {
     name: "Whatsapp",
     link: "+54 9 341 310 7794",
-    copy: false,
+    copy: true,
     icon: "/icons/whatsapp.svg",
   },
   {
     name: "Email",
     link: "hellojavaa@gmail.com",
-    copy: false,
+    copy: true,
     icon: "/icons/email.svg",
   },
 ];
