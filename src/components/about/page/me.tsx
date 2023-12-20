@@ -2,11 +2,8 @@
 
 import Section from "@/components/section";
 
-import { MeInfo } from "./me-info";
-import { MeGo } from "./me-go";
 import { motion } from "framer-motion";
-import { MeEarly } from "./me-eatly";
-import { MeActual } from "./me-actual";
+import { CardSection } from "./card";
 
 export function AboutPageMe() {
   return (
@@ -16,17 +13,13 @@ export function AboutPageMe() {
     >
       <Section>
         <div className="flex flex-col lg:gap-[14rem] gap-[5rem]">
-          <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-16 gap-0 mt-10 lg:mt-0 items-center relative">
-            <MeInfo />
-            <motion.img
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="rounded-xl shadow-xl"
-              src="/about/mine.jpg"
-              alt="Minecraft"
-            />
+          <CardSection
+            type="INICIOS"
+            title="Empezando con Java en Minecraft"
+            left={true}
+            description="Mi primer contacto con la programación fue en el año 2017, años despues de empezar a jugar Minecraft. En ese momento, me interesó mucho la programación de plugins para servidores de Minecraft, por lo que empecé a aprender Java. Lo que me llevó a encontrar mi pasión por la programación."
+            image="/about/mine.jpg"
+          >
             <motion.img
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -34,34 +27,17 @@ export function AboutPageMe() {
               transition={{ duration: 0.5, delay: 0.2 }}
               src="/about/arrow.svg"
               alt=""
-              className="opacity-70 absolute hidden lg:block w-[200px] h-[200px] rotate-[160deg] right-[45%] bottom-[-14rem]"
+              className="opacity-70 hidden lg:block  absolute w-[200px] h-[200px] rotate-[160deg] right-[45%] bottom-[-14rem]"
             />
-          </div>
+          </CardSection>
 
-          <div className="grid lg:hidden grid-cols-1 gap-0 mt-10 items-center relative">
-            <MeEarly />
-            <motion.img
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="rounded-xl shadow-xl w-full"
-              src="/about/spring.png"
-              alt="Spring"
-            />
-          </div>
-
-          <div className="hidden lg:grid lg:grid-cols-2 grid-cols-1 lg:gap-16 gap-0 mt-10 lg:mt-0 items-center relative">
-            <motion.img
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="rounded-xl shadow-xl w-full"
-              src="/about/spring.png"
-              alt="Spring"
-            />
-            <MeEarly />
+          <CardSection
+            type="POCO TIEMPO LUEGO"
+            title="Mis primeros pasos en .NET y Spring Boot"
+            left={false}
+            description="A mediados de 2018, empecé a aprender C# y .NET, intentando hacer aplicaciones de escritorio. También empecé a aprender SQL, para poder hacer bases de datos para mis aplicaciones. Mi primer proyecto de API RESTful fue un gestor de tareas. Mas tarde mi próximo 'gran paso' sería un sistema de gestión de empleados y clientes con Spring Boot."
+            image="/about/spring.png"
+          >
             <motion.img
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -69,21 +45,17 @@ export function AboutPageMe() {
               transition={{ duration: 0.5, delay: 0.2 }}
               src="/about/arrow.svg"
               alt=""
-              className="opacity-70 hidden lg:block absolute w-[200px] h-[200px] rotate-[80deg] right-[45%] bottom-[-13rem]"
+              className="opacity-70 hidden lg:block  absolute w-[200px] h-[200px] rotate-[80deg] right-[45%] bottom-[-13rem]"
             />
-          </div>
+          </CardSection>
 
-          <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-16 gap-0 mt-10 lg:mt-0 items-center relative">
-            <MeGo />
-            <motion.img
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="rounded-xl shadow-xl h-full"
-              src="/about/react.png"
-              alt="React"
-            />
+          <CardSection
+            type="AÑOS DESPUÉS"
+            title="Siguiendo con el desarrollo web"
+            left={true}
+            description="A mediados de 2018, empecé a aprender C# y .NET, intentando hacer aplicaciones de escritorio. También empecé a aprender SQL, para poder hacer bases de datos para mis aplicaciones. Mi primer proyecto de API RESTful fue un gestor de tareas. Mas tarde mi próximo 'gran paso' sería un sistema de gestión de empleados y clientes con Spring Boot."
+            image="/about/react.png"
+          >
             <motion.img
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -93,33 +65,17 @@ export function AboutPageMe() {
               alt=""
               className="opacity-70 hidden lg:block absolute w-[200px] h-[200px] rotate-[160deg] right-[45%] bottom-[-13rem]"
             />
-          </div>
+          </CardSection>
 
-          <div className="grid lg:hidden lg:grid-cols-2 grid-cols-1 lg:gap-16 gap-0 mt-10 lg:mt-0 items-center relative">
-            <MeActual />
-            <motion.img
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="rounded-xl shadow-xl"
-              src="/about/actual.png"
-              alt="Actualidad"
-            />
-          </div>
-
-          <div className="hidden lg:grid lg:grid-cols-2 grid-cols-1 lg:gap-16 gap-0 mt-10 lg:mt-0 items-center relative">
-            <motion.img
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="rounded-xl shadow-xl"
-              src="/about/actual.png"
-              alt="Actualidad"
-            />
-            <MeActual />
-          </div>
+          <CardSection
+            type="ACTUALIDAD"
+            title="Mejorando mis habilidades"
+            left={false}
+            description="Actualmente, me decidí por el mundo back-end, siento que es el lugar donde más disfruto programar. 
+            Voy en progreso con proyectos personales, y también estoy aprendiendo nuevas tecnologías,
+            tales como Django y Laravel, que son frameworks que me llaman mucho la atención. "
+            image="/about/actual.png"
+          ></CardSection>
         </div>
       </Section>
     </div>

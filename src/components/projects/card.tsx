@@ -41,7 +41,7 @@ export function ProjectCard({
         onMouseLeave={() => setHover("")}
       >
         <div className="p-8">
-          <div className="flex gap-4">
+          <div className="gap-4 hidden md:flex">
             {techs.map((tech) => (
               <div
                 key={tech}
@@ -60,7 +60,7 @@ export function ProjectCard({
         <img
           src={link}
           alt={name}
-          className="w-full h-full object-cover rounded-xl group-hover:scale-110 transform transition-all duration-300"
+          className="hidden md:flex w-full h-full object-cover rounded-xl group-hover:scale-110 transform transition-all duration-300"
         />
       </div>
     </motion.div>
