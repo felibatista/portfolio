@@ -11,13 +11,11 @@ export function ContactTitle() {
       viewport={{ once: true }}
       className="flex flex-col gap-4 md:py-8 md:pr-8 items-center md:items-start"
     >
-      <h3 className="font-semibold text-xl flex items-center mb-4">
-        <span className="font-extrabold md:mr-2 text-4xl text-[#7d6b6b]">
-          /
-        </span>
+      <h3 className="font-semibold text-lg flex items-center mb-4">
+        <span className="font-extrabold mr-2 text-3xl text-[#7d6b6b]">/</span>
         CONTACTO
       </h3>
-      <h4 className="font-bold text-[45px] lg:text-[50px] leading-[1.1]  md:text-start text-center">
+      <h4 className="font-bold text-[35px] md:text-[45px] lg:text-[50px] leading-[1.1]  md:text-start text-center">
         ¿Estás interesado en trabajar conmigo?
       </h4>
 

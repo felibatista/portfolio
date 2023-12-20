@@ -24,7 +24,7 @@ export function InfoCard({
         <span className="font-extrabold mr-2 text-3xl text-[#7d6b6b]">/</span>
         {type}
       </h3>
-      <h4 className="font-bold text-[35px] md:text-[45px] lg:text-[50px] leading-[1.1]  lg:text-start text-center">
+      <h4 className="font-bold text-[35px] md:text-[45px] lg:text-[50px] leading-[1.1] lg:text-start text-center">
         {title}
       </h4>
 

@@ -36,7 +36,7 @@ export function ProjectCard({
       )}
     >
       <div
-        className="rounded-xl bg-[#242428] w-full flex flex-col h-full overflow-hidden"
+        className="rounded-xl bg-[#242428] w-full flex flex-col md:h-full overflow-hidden"
         onMouseEnter={handleHover}
         onMouseLeave={() => setHover("")}
       >
@@ -51,10 +51,20 @@ export function ProjectCard({
               </div>
             ))}
           </div>
-          <h3 className="font-semibold text-[30px] lg:text-[35px] leading-[1.1] mt-[3rem]">
+          <h3 className="font-semibold text-[30px] lg:text-[35px] leading-[1.1] md:mt-[3rem]">
             {name}
           </h3>
           <p className=" text-[18px] mt-3">{description}</p>
+          <div className="gap-2 md:hidden flex mt-4 flex-wrap">
+            {techs.map((tech) => (
+              <div
+                key={tech}
+                className="px-4 py-2 bg-[#7d6b6b] rounded-lg w-fit"
+              >
+                <h3 className="text-lg">{tech}</h3>
+              </div>
+            ))}
+          </div>
         </div>
 
         <img
