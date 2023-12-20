@@ -14,7 +14,7 @@ import { Toaster } from "@/components/ui/toaster";
 
 export default function Page() {
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <Toaster />
       <Section className="flex-col relative overflow-hidden snap-center">
         <motion.div

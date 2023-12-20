@@ -26,10 +26,10 @@ export function ProjectCard({
 
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
+      initial={{ opacity: 0, scale: 0.6 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.2 }}
+      transition={{ duration: 0.3 }}
       className={cn(
         "flex flex-col gap-4 items-center md:items-start row-span-2 h-full group hover:scale-105 transform transition-all duration-300 cursor-pointer",
         hover !== name && hover !== "" ? "opacity-30" : "opacity-100"

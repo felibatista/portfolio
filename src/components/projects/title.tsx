@@ -9,7 +9,7 @@ export function ProjectsTitle() {
       initial={{ opacity: 0, x: -100 }}
       whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
       viewport={{ once: true }}
-      className="flex flex-col gap-4 md:py-8 md:pr-8 items-center md:items-start h-fit row-span-1"
+      className="flex flex-col gap-4 lg:py-8 lg:pr-8 items-center lg:items-start h-fit row-span-1"
     >
       <h3 className="font-semibold text-lg flex items-center mb-4">
         <span className="font-extrabold mr-2 text-3xl text-[#7d6b6b]">/</span>
