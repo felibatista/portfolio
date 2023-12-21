@@ -2,11 +2,11 @@
 
 import { SOCIAL_LINKS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
-import { AnimatePresence, motion } from "framer-motion";
-import { createElement, useState } from "react";
+import { motion } from "framer-motion";
+import { useState } from "react";
 import { toast } from "../ui/use-toast";
 
-export function Follow() {
+export function HomeFollowItems() {
   const [isHover, setIsHover] = useState(false);
   const [data, setData] = useState<string>("");
   const [link, setLink] = useState<string>("");

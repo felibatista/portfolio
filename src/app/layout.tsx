@@ -1,8 +1,7 @@
-import "./globals.css";
+import "./../lib/styles/globals.css";
 
 import { cn } from "@/lib/utils";
 import { Rubik } from "next/font/google";
-import { Toaster } from "@/components/ui/toaster";
 
 import type { Metadata } from "next";
 

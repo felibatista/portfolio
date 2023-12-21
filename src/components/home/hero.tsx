@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-export function Hero() {
+export function HomeHero() {
   return (
     <motion.div
       initial={{ opacity: 0, x: -100 }}

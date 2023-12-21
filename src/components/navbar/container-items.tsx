@@ -4,7 +4,7 @@ import { NAVBAR_ITEMS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 
-export function ContainerItems() {
+export function NavbarContainerItems() {
   const [isHover, setIsHover] = useState(false);
 
   function handleMouseEnter() {

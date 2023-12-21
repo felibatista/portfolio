@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ButtonLink } from "../link";
-import { Follow } from "./follow";
+import { ButtonLink } from "../ui/link";
+import { HomeFollowItems } from "./follow";
 
-export function Side() {
+export function HomeRightSide() {
   return (
     <motion.div
       initial={{ opacity: 0, x: 100 }}
@@ -31,7 +31,7 @@ export function Side() {
         <ButtonLink name="VER TODO" href="/about" className="mt-4" />
       </div>
 
-      <Follow />
+      <HomeFollowItems />
     </motion.div>
   );
 }

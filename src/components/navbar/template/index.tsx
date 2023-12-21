@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ContainerItems } from "./container-items";
-import { MenuTrigger } from "./menu-trigger";
+import { NavbarContainerItems } from "../container-items";
+import { NavbarMenuTrigger } from "../menu-trigger";
 
-export function Navbar() {
+export function NavbarTemplate() {
   return (
     <motion.nav
       initial={{ opacity: 0, x: 100 }}
@@ -12,8 +12,8 @@ export function Navbar() {
       viewport={{ once: true }}
       className="flex justify-end py-4 my-8 items-center relative z-20"
     >
-      <ContainerItems />
-      <MenuTrigger />
+      <NavbarContainerItems />
+      <NavbarMenuTrigger />
     </motion.nav>
   );
 }

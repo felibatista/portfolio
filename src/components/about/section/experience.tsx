@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-export function Date() {
+export function AboutSectionExperience() {
   return (
     <motion.div
       initial={{ opacity: 0, x: 100 }}

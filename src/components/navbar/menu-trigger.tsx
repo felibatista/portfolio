@@ -1,17 +1,11 @@
 "use client";
 
-import {
-  Cross1Icon,
-  HamburgerMenuIcon,
-  LockClosedIcon,
-} from "@radix-ui/react-icons";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
-import { MenuToggle } from "./menu-toggle";
 import { NAVBAR_ITEMS } from "@/lib/constants";
-import { cn } from "@/lib/utils";
 import { useEffect } from "react";
+import { NavbarMenuToggle } from "./menu-toggle";
 
-export function MenuTrigger() {
+export function NavbarMenuTrigger() {
   const [open, toggleOpen] = useCycle(false, true);
 
   useEffect(() => {
@@ -28,7 +22,7 @@ export function MenuTrigger() {
         animate={open ? "open" : "closed"}
         className="ml-6 hover:scale-105 right-0 absolute top-1 bottom-0 z-20 flex items-center"
       >
-        <MenuToggle toggle={() => toggleOpen()} />
+        <NavbarMenuToggle toggle={() => toggleOpen()} />
       </motion.div>
 
       <AnimatePresence>

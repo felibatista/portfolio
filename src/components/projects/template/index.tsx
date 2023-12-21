@@ -1,13 +1,13 @@
 "use client"
 
-import Section from "../section";
+import Section from "../../section";
 
 import { PROJECTS } from "@/lib/constants";
-import { ProjectCard } from "./card";
-import { ProjectsTitle } from "./title";
+import { ProjectCard } from "../card";
+import { ProjectsTitle } from "../title";
 import { useState } from "react";
 
-export function Projects() {
+export function ProjectsTemplate() {
   const [hover, setHover] = useState("");
 
   return (

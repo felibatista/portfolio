@@ -13,7 +13,7 @@ const Path = (props: React.JSX.IntrinsicAttributes & SVGMotionProps<SVGPathEleme
   />
 );
 
-export const MenuToggle = ({ toggle }: { toggle: () => void}) => (
+export const NavbarMenuToggle = ({ toggle }: { toggle: () => void}) => (
   <button onClick={toggle}>
     <svg width="30" height="30" viewBox="0 0 23 23">
       <Path

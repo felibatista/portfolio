@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useState } from "react";
 import {
   CarouselProvider,
   Slider,
@@ -9,11 +8,13 @@ import {
   ButtonNext,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
+import React from "react";
+
 import { SkillCard } from "./card";
 import { SKILLS } from "@/lib/constants";
 import { motion } from "framer-motion";
 
-export function Carousel() {
+export function SkillsCarousel() {
   return (
     <motion.div
       initial={{ opacity: 0, y: 100 }}

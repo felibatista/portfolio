@@ -1,8 +1,8 @@
 "use client";
 
+import { NavbarTemplate } from "@/components/navbar/template";
 import Section from "@/components/section";
 
-import { Navbar } from "@/components/navbar";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 
@@ -10,7 +10,7 @@ export default function DocumentsPage() {
   return (
     <main>
       <Section className="w-full relative flex-col overflow-hidden">
-        <Navbar />
+        <NavbarTemplate />
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}

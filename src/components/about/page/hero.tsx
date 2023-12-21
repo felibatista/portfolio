@@ -1,15 +1,15 @@
 "use client";
 
+import { NavbarTemplate } from "@/components/navbar/template";
 import Section from "@/components/section";
 
-import { Navbar } from "@/components/navbar";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 
 export function AboutPageHero() {
   return (
     <Section className="w-full relative flex-col overflow-hidden">
-      <Navbar />
+      <NavbarTemplate />
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
@@ -42,11 +42,10 @@ export function AboutPageHero() {
       </motion.div>
 
       <div className="hidden lg:block absolute w-full h-full">
-
         <motion.img
           initial={{ opacity: 0, rotate: 0 }}
           animate={{
-            opacity:  1,
+            opacity: 1,
             transition: { duration: 0.6, delay: 0.4 },
           }}
           viewport={{ once: true }}

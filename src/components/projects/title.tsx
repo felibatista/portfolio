@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ButtonLink } from "../link";
+import { ButtonLink } from "../ui/link";
 
 export function ProjectsTitle() {
   return (
