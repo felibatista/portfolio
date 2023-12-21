@@ -12,8 +12,8 @@ export const NAVBAR_ITEMS = [
     path: "proyectos",
   },
   {
-    name: "Experiencias",
-    path: "experiencias",
+    name: "Documentaciones",
+    path: "documents",
   },
   {
     name: "Contacto",
