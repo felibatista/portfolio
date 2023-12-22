@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function DocumentsProjectsSection() {
   return (
-    <div className="bg-[#18181b] flex items-center shrink-0 z-10 md:py-[7rem] py-[3rem]">
+    <div id="projects" className="bg-[#18181b] flex items-center shrink-0 z-10 md:py-[7rem] py-[3rem]">
       <Section className="flex justify-start items-start w-full flex-col">
         <motion.div
           initial={{ opacity: 0, x: 100 }}

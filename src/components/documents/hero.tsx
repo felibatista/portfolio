@@ -24,7 +24,7 @@ export function DocumentsHero() {
       </p>
       <button
         onClick={() => {
-          const element = document.querySelector("#global");
+          const element = document.querySelector("#projects");
           element?.scrollIntoView({ behavior: "smooth" });
         }}
         className="rounded-xl mt-[3rem] border-white border px-1 py-2 cursor-pointer hover:scale-105 transition-all opacity-70"

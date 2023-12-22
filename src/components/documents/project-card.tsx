@@ -84,14 +84,14 @@ export function DocumentsProjectCard({
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
-        <div className="transition-colors ease-linear shadow-md mt-6">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-8 shadow-2xl">
+        <div className="transition-colors ease-linear shadow-xl mt-6">
           <div className="w-full h-8 rounded-t-lg bg-gray-600 flex justify-start items-center space-x-1.5 px-4">
             <span className="w-3 h-3 border-2 border-transparent border-red-400 rounded-full bg-red-400 bg-transparent "></span>
             <span className="w-3 h-3 border-2 border-transparent border-yellow-400 rounded-full bg-yellow-400 bg-transparent"></span>
             <span className="w-3 h-3 border-2 border-transparent border-green-400 rounded-full bg-green-400 bg-transparent"></span>
           </div>
-          <div className=" bg-gray-700 border-t-0 w-full h-[22rem] rounded-b-lg">
+          <div className=" bg-gray-700 border-t-0 w-full h-[20rem] rounded-b-lg">
             <img
               src={images[0]}
               alt="Conversor"
@@ -100,13 +100,13 @@ export function DocumentsProjectCard({
           </div>
         </div>
 
-        <div className="transition-colors ease-linear shadow-md mt-6">
+        <div className="transition-colors ease-linear shadow-xl mt-6">
           <div className="w-full h-8 rounded-t-lg bg-gray-600 flex justify-start items-center space-x-1.5 px-4">
             <span className="w-3 h-3 border-2 border-transparent border-red-400 rounded-full bg-red-400 bg-transparent "></span>
             <span className="w-3 h-3 border-2 border-transparent border-yellow-400 rounded-full bg-yellow-400 bg-transparent"></span>
             <span className="w-3 h-3 border-2 border-transparent border-green-400 rounded-full bg-green-400 bg-transparent"></span>
           </div>
-          <div className=" bg-gray-700 border-t-0 w-full h-[22rem] rounded-b-lg">
+          <div className=" bg-gray-700 border-t-0 w-full h-[20rem] rounded-b-lg">
             <img
               src={images[1]}
               alt="Conversor"
