@@ -1,7 +1,5 @@
 "use client"
 
-import { Navbar } from "@/components/navbar/template";
-import Section from "@/components/section";
 import {
   Accordion,
   AccordionContent,
