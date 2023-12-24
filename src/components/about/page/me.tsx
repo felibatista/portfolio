@@ -12,7 +12,7 @@ export function AboutPageMe() {
       className="bg-[#18181b] flex items-center shrink-0 z-10 md:py-[7rem] py-[3rem]"
     >
       <Section>
-        <div className="flex flex-col lg:gap-[14rem] gap-[5rem]">
+        <div className="flex flex-col lg:gap-[30vh] gap-[5rem]">
           <CardSection
             type="INICIOS"
             title="Empezando con Java en Minecraft"
@@ -27,7 +27,7 @@ export function AboutPageMe() {
               transition={{ duration: 0.5, delay: 0.2 }}
               src="/about/arrow.svg"
               alt=""
-              className="opacity-70 hidden lg:block  absolute w-[200px] h-[200px] rotate-[160deg] right-[45%] bottom-[-14rem]"
+              className="opacity-70 hidden lg:block  absolute w-[25vh] h-[25vh] rotate-[160deg] right-[45%] bottom-[-26vh]"
             />
           </CardSection>
 
@@ -45,7 +45,7 @@ export function AboutPageMe() {
               transition={{ duration: 0.5, delay: 0.2 }}
               src="/about/arrow.svg"
               alt=""
-              className="opacity-70 hidden lg:block  absolute w-[200px] h-[200px] rotate-[80deg] right-[45%] bottom-[-13rem]"
+              className="opacity-70 hidden lg:block  absolute w-[25vh] h-[25vh] rotate-[80deg] right-[45%] bottom-[-26vh]"
             />
           </CardSection>
 
@@ -63,7 +63,7 @@ export function AboutPageMe() {
               transition={{ duration: 0.5, delay: 0.2 }}
               src="/about/arrow.svg"
               alt=""
-              className="opacity-70 hidden lg:block absolute w-[200px] h-[200px] rotate-[160deg] right-[45%] bottom-[-13rem]"
+              className="opacity-70 hidden lg:block absolute w-[25vh] h-[25vh] rotate-[160deg] right-[45%] bottom-[-26vh]"
             />
           </CardSection>
 

@@ -15,7 +15,7 @@ const Path = (props: React.JSX.IntrinsicAttributes & SVGMotionProps<SVGPathEleme
 
 export const NavbarMenuToggle = ({ toggle }: { toggle: () => void}) => (
   <button onClick={toggle}>
-    <svg width="30" height="30" viewBox="0 0 23 23">
+    <svg viewBox="0 0 23 23" className="h-[4vh]">
       <Path
         variants={{
           closed: { d: "M 2 2.5 L 20 2.5" },

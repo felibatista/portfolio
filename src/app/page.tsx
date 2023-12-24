@@ -19,8 +19,6 @@ export default function Page() {
       <SkillsTemplate />
       <ProjectsTemplate />
       <ContactTemplate />
-
-      <Footer />
     </div>
   );
 }

@@ -15,16 +15,16 @@ export function AboutPageHero() {
         animate={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
         className="flex flex-col items-center justify-center w-full z-[11] flex-1 md:pb-[6rem]"
       >
-        <h3 className="font-semibold text-xl flex items-center mb-4">
-          <span className="font-extrabold md:mr-2 text-4xl text-[#7d6b6b]">
+        <h3 className="font-semibold text-description flex items-center mb-4">
+          <span className="font-extrabold md:mr-2 text-[4vh] text-[#7d6b6b]">
             /
           </span>
           SOBRE MI
         </h3>
-        <h1 className="font-bold text-[45px] lg:text-[50px] leading-[1.1] pb-2 text-center">
+        <h1 className="font-bold text-title leading-[1.1] pb-2 text-center">
           Mi vida en <span className="text-[#b19797]">detalle</span>
         </h1>
-        <p className="mt-4 text-[22px] lg:text-[20px] text-center flex h-fit">
+        <p className="mt-4 text-description text-center flex h-fit">
           Me llamo Felipe Batista, tengo 19 años y soy de Argentina. Soy una
           persona que le gusta mucho la tecnología y la programación.
           Actualmente estoy estudiando en la universidad la carrera de
@@ -37,7 +37,7 @@ export function AboutPageHero() {
           }}
           className="rounded-xl mt-[3rem] border-white border px-1 py-2 cursor-pointer hover:scale-105 transition-all opacity-70"
         >
-          <ChevronDownIcon className="w-6 h-6 animate-bounce" />
+          <ChevronDownIcon className="h-[3vh] w-[3vh] animate-bounce" />
         </button>
       </motion.div>
 
@@ -50,7 +50,7 @@ export function AboutPageHero() {
           }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="absolute hidden md:block z-[1] h-[400px] bottom-[-10rem] right-[8rem]"
+          className="absolute hidden md:block z-[1] h-[55vh] bottom-[-26vh] right-[15vh]"
           src="/about/arg-flag.svg"
           alt=""
         />
@@ -63,7 +63,7 @@ export function AboutPageHero() {
           }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="absolute hidden md:block mx-auto z-[10] h-[400px] bottom-[-10rem] left-0 right-0"
+          className="absolute hidden md:block mx-auto z-[10]  h-[55vh]  bottom-[-26vh] left-0 right-0"
           src="/about/coding.svg"
           alt=""
         />
@@ -76,7 +76,7 @@ export function AboutPageHero() {
           }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="absolute hidden md:block  mx-auto z-[1] h-[400px]  bottom-[-14rem] left-[7rem]"
+          className="absolute hidden md:block  mx-auto z-[1]  h-[55vh] bottom-[-35vh] left-[14vh]"
           src="/about/pc.svg"
           alt=""
         />

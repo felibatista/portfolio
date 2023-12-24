@@ -32,8 +32,8 @@ export function HomeFollowItems() {
   return (
     <div className="flex flex-col gap-2">
       <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <h2 className="font-bold text-xl">CONTACTO</h2>
-        <ul className="flex gap-2 text-[20px] mt-4">
+        <h2 className="font-bold text-title-sm">CONTACTO</h2>
+        <ul className="flex justify-between text-[20px] mt-4">
           {SOCIAL_LINKS.map((item) => (
             <motion.li
               key={item.name}
@@ -49,12 +49,12 @@ export function HomeFollowItems() {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10"
+                  className="h-[4vh]"
                 >
-                  <img src={item.icon} alt={item.name} className="w-10 h-10" />
+                  <img src={item.icon} alt={item.name} className="h-[4vh]" />
                 </a>
               ) : (
-                <img onClick={() => handleToast(item.link)} src={item.icon} alt={item.name} className="w-10 h-10" />
+                <img onClick={() => handleToast(item.link)} src={item.icon} alt={item.name} className="h-[4vh]" />
               )}
             </motion.li>
           ))}

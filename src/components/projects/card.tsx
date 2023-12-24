@@ -47,14 +47,14 @@ export function ProjectCard({
                 key={tech}
                 className="px-4 py-2 bg-[#7d6b6b] rounded-lg w-fit"
               >
-                <h3 className="text-lg">{tech}</h3>
+                <h3 className="text-description-sm">{tech}</h3>
               </div>
             ))}
           </div>
-          <h3 className="font-semibold text-[30px] lg:text-[35px] leading-[1.1] md:mt-[3rem]">
+          <h3 className="font-semibold text-[4vh] leading-[1.1] md:mt-[3rem]">
             {name}
           </h3>
-          <p className=" text-[18px] mt-3">{description}</p>
+          <p className=" text-description mt-3">{description}</p>
           <div className="gap-2 md:hidden flex mt-4 flex-wrap">
             {techs.map((tech) => (
               <div

@@ -17,15 +17,14 @@ export function HomeTemplate() {
         <img
           src="me.png"
           alt=""
-          className="absolute hidden md:block bottom-[-4rem] mx-auto left-[50%] translate-x-[-50%] h-[1000px] z-[1] opacity-40"
+          className="absolute hidden md:block bottom-[-4rem] mx-auto left-[50%] translate-x-[-50%] h-full z-[1] opacity-40"
         />
       </motion.div>
       <NavbarTemplate />
-      <div className="flex justify-center flex-1">
-        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-16 gap-8 md:mt-0 z-[3] mb-[2rem]">
+
+        <div className="grid md:grid-cols-2 grid-cols-1 flex-1 md:gap-16 gap-8 md:mt-0 z-[3] mb-[2rem]">
           <HomeHero />
           <HomeRightSide />
-        </div>
       </div>
     </Section>
   );

@@ -15,13 +15,13 @@ export function SkillCard({
     <div
       className={cn(
         className,
-        "bg-[#18181b] md:rounded-xl p-8 flex flex-col text-left h-[400px] md:flex-shrink-0 snap-center items-center md:items-start relative w-[20rem] lg:w-[18rem]"
+        "bg-[#18181b] md:rounded-xl p-[5vh] flex flex-col justify-center text-left h-[55vh] md:flex-shrink-0 snap-center items-center md:items-start relative w-auto"
       )}
     >
-      <img src={image} alt={title} className="w-[6rem] h-[6rem] mt-[5rem]" />
+      <img src={image} alt={title} className="h-[15vh]" />
 
-      <h3 className="text-3xl font-bold uppercase mt-6">{title}</h3>
-      <p className="text-gray-400">{description}</p>
+      <h3 className="text-title-sm font-bold uppercase mt-6">{title}</h3>
+      <p className="text-gray-400 text-description-sm">{description}</p>
     </div>
   );
 }

@@ -17,16 +17,16 @@ export function NavbarContainerItems() {
 
   return (
     <div
-      className="hidden md:flex gap-4 relative mr-10"
+      className="hidden md:flex gap-[2vh] relative mr-[3%]"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <ul className="flex text-[20px]">
+      <ul className="flex text-[2.5vh]">
         {NAVBAR_ITEMS.map((item) => (
           <li
             key={item.name}
             className={cn(
-              "px-3 transition-all duration-300",
+              "px-[1.7vh] transition-all duration-300",
               isHover ? "opacity-30 hover:opacity-100" : ""
             )}
           >

@@ -15,12 +15,21 @@ const theme = {
     },
   },
   extend: {
+    fontSize: {
+      "title": "6vh",
+      "description": "2.5vh",
+      "title-sm": "3vh",
+      "description-sm": "2.2vh",
+    },
+
     backgroundImage: {
       "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-      "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      "gradient-conic":
+        "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
     },
     backgroundColor: {
-      "gradient-base": "linear-gradient(195deg, #5a5a66 0%, #3d3d45 50%, #242428 100%)",
+      "gradient-base":
+        "linear-gradient(195deg, #5a5a66 0%, #3d3d45 50%, #242428 100%)",
     },
     colors: {
       border: "hsl(var(--border))",
@@ -126,9 +135,12 @@ const theme = {
       "color-change-4x": "color-change-4x 6s linear  infinite alternate both",
       "accordion-down": "accordion-down 0.2s ease-out",
       "accordion-up": "accordion-up 0.2s ease-out",
-      "scale-in-center": "scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both",
-      "scale-out-center": "scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530)   both",
-      "slide-top": "slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both",
+      "scale-in-center":
+        "scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both",
+      "scale-out-center":
+        "scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530)   both",
+      "slide-top":
+        "slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both",
       "accordion-down": "accordion-down 0.2s ease-out",
       "accordion-up": "accordion-up 0.2s ease-out",
     },

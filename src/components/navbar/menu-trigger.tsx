@@ -44,7 +44,7 @@ export function NavbarMenuTrigger() {
                 opacity: 1,
                 transition: { duration: 0.2, delay: 0.1 },
               }}
-              className="flex flex-col justify-center items-center h-full font-semibold text-[40px] md:text-[50px] lg:text-[60px]"
+              className="flex flex-col justify-center items-center h-full font-semibold text-[8vh]"
             >
               {NAVBAR_ITEMS.map((item) => (
                 <li key={item.name}>

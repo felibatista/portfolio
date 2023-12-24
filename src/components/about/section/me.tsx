@@ -11,21 +11,23 @@ export function AboutSectionMe() {
       viewport={{ once: true }}
       className="flex flex-col gap-4 md:border-r border-white border-opacity-70 md:py-8 md:pr-8 items-center md:items-start"
     >
-      <h3 className="font-semibold text-lg flex items-center mb-4">
-        <span className="font-extrabold mr-2 text-3xl text-[#7d6b6b]">/</span>
-        SOBRE MI
-      </h3>
-      <h4 className="font-bold text-[35px] md:text-[45px] lg:text-[50px] leading-[1.1]  md:text-start text-center">
+        <h3 className="font-semibold text-description flex items-center mb-4">
+          <span className="font-extrabold md:mr-2 text-[4vh] text-[#7d6b6b]">
+            /
+          </span>
+          SOBRE MI
+        </h3>
+      <h4 className="font-bold text-title leading-[1.1]  md:text-start text-center">
         Creando mis aplicaciones desde los 13 años
       </h4>
 
-      <p className="text-[22px] lg:text-[20px] text-center md:text-left">
+      <p className="text-description text-center md:text-left">
         {`Comencé con Java y servidores en Minecraft. Desde entonces he estado
         aprendiendo y desarrollando mis habilidades. Mi orientación fue elegida
         por la curiosidad de saber como funcionaba todo por "debajo del capó"`}
       </p>
 
-      <ButtonLink name="MÁS SOBRE MI" href="/about" className="text-xl" />
+      <ButtonLink name="MÁS SOBRE MI" href="/about" />
     </motion.div>
   );
 }
