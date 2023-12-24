@@ -28,32 +28,32 @@ export function DocumentsProjectCard({
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="flex flex-col mt-[3rem] bg-[#242428] p-6 rounded-xl"
+      className="flex flex-col mt-[3rem] bg-[#242428] p-[3vh] rounded-xl"
     >
-      <div className="flex flex-col text-[16px] lg:text-[18px]">
-        <h4 className="font-bold text-[20px] md:text-[30px] leading-[1.1] lg:text-start text-center">
+      <div className="flex flex-col text-description">
+        <h4 className="font-bold text-[4vh] leading-[1.1] lg:text-start text-center">
           {title}
         </h4>
         <span className="italic">{techs}</span>
 
-        <p className="text-center lg:text-left mt-3">
+        <p className="text-left mt-[2vh]">
           {`
             ${description}`}
         </p>
 
-        <div className="grid md:grid-cols-3 grid-cols-1 mt-4 pb-4">
+        <div className="grid md:grid-cols-3 grid-cols-1 mt-[3vh] pb-[3vh] gap-[2vh]">
           <ul className="flex flex-col [&>li>a]:underline [&>li>a]:underline-offset-4 gap-1">
             <li className="hover:translate-x-2 transition-all">
               <a href={"/" + path}>
                 Ver documentación completa
-                <ArrowRightIcon className="w-8 h-6 inline-block ml-1" />
+                <ArrowRightIcon className="h-[4vh] w-[3vh] inline-block ml-1" />
               </a>
             </li>
 
             <li className="hover:translate-x-2  transition-all">
               <a href={sourceCodeUrl} target="_blank">
                 Ver código fuente
-                <ArrowRightIcon className="w-8 h-6 inline-block ml-1" />
+                <ArrowRightIcon className="h-[4vh] w-[3vh] inline-block ml-1" />
               </a>
             </li>
 
@@ -61,14 +61,14 @@ export function DocumentsProjectCard({
               <li className="hover:scale-[1.01] transition-all">
                 <a href={liveDemoUrl} target="_blank">
                   Ver Live Demo
-                  <ArrowRightIcon className="w-8 h-6 inline-block ml-1" />
+                  <ArrowRightIcon className="h-[4vh] w-[3vh] inline-block ml-1" />
                 </a>
               </li>
             )}
           </ul>
 
-          <div className="font-semibold flex items-center gap-3 ">
-            <img src="/documents/structure.svg" alt="" className="w-8 h-12 " />
+          <div className="font-semibold flex items-center gap-[1.5vh] ">
+            <img src="/documents/structure.svg" alt="" className="h-[6vh] w-[4vh]" />
             <p>
               Tipo de estructura:{" "}
               <span className="font-normal">{structure}</span>
@@ -76,7 +76,7 @@ export function DocumentsProjectCard({
           </div>
 
           <div className="font-semibold flex items-center ">
-            <img src="/documents/time.svg" alt="" className="w-12 h-12 " />
+            <img src="/documents/time.svg" alt="" className="h-[6vh] w-[5.5vh]" />
             <p>
               Tiempo de desarrollo: <span className="font-normal">{time}</span>
             </p>
@@ -84,14 +84,14 @@ export function DocumentsProjectCard({
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-8 shadow-2xl">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-[4vh]">
         <div className="transition-colors ease-linear shadow-xl mt-6">
           <div className="w-full h-8 rounded-t-lg bg-gray-600 flex justify-start items-center space-x-1.5 px-4">
             <span className="w-3 h-3 border-2 border-transparent border-red-400 rounded-full bg-red-400 bg-transparent "></span>
             <span className="w-3 h-3 border-2 border-transparent border-yellow-400 rounded-full bg-yellow-400 bg-transparent"></span>
             <span className="w-3 h-3 border-2 border-transparent border-green-400 rounded-full bg-green-400 bg-transparent"></span>
           </div>
-          <div className=" bg-gray-700 border-t-0 w-full h-[20rem] rounded-b-lg">
+          <div className=" bg-gray-700 border-t-0 w-full h-[40vh] rounded-b-lg">
             <img
               src={images[0]}
               alt="Conversor"
@@ -100,13 +100,13 @@ export function DocumentsProjectCard({
           </div>
         </div>
 
-        <div className="transition-colors ease-linear shadow-xl mt-6">
+        <div className="transition-colors ease-linear mt-6">
           <div className="w-full h-8 rounded-t-lg bg-gray-600 flex justify-start items-center space-x-1.5 px-4">
             <span className="w-3 h-3 border-2 border-transparent border-red-400 rounded-full bg-red-400 bg-transparent "></span>
             <span className="w-3 h-3 border-2 border-transparent border-yellow-400 rounded-full bg-yellow-400 bg-transparent"></span>
             <span className="w-3 h-3 border-2 border-transparent border-green-400 rounded-full bg-green-400 bg-transparent"></span>
           </div>
-          <div className=" bg-gray-700 border-t-0 w-full h-[20rem] rounded-b-lg">
+          <div className=" bg-gray-700 border-t-0 w-full h-[40vh] rounded-b-lg">
             <img
               src={images[1]}
               alt="Conversor"

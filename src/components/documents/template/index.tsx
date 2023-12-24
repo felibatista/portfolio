@@ -12,7 +12,7 @@ export function DocumentsTemplate() {
         <NavbarTemplate />
         <DocumentsHero />
 
-        <div className="hidden lg:block absolute w-full h-full">
+        <div className="hidden lg:block absolute w-full h-full overflow-hidden">
           <motion.img
             initial={{ opacity: 0, rotate: 0 }}
             animate={{
@@ -21,7 +21,7 @@ export function DocumentsTemplate() {
             }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="absolute hidden md:block z-[1] h-[400px] bottom-[-10rem] right-[10rem]"
+            className="absolute hidden md:block z-[1] h-[55vh] bottom-[-22vh] right-[30vh]"
             src="/documents/connection.svg"
             alt=""
           />
@@ -34,7 +34,7 @@ export function DocumentsTemplate() {
             }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="absolute hidden md:block mx-auto z-[10] h-[400px] bottom-[-12rem] left-0 right-0"
+            className="absolute hidden md:block mx-auto z-[10] h-[50vh] bottom-[-20vh] left-[-4vh] right-0"
             src="/documents/api.svg"
             alt=""
           />
@@ -47,7 +47,7 @@ export function DocumentsTemplate() {
             }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="absolute hidden md:block  mx-auto z-[1] h-[400px]  bottom-[-14rem] left-[7rem]"
+            className="absolute hidden md:block  mx-auto z-[1] h-[55vh]  bottom-[-30vh] left-[27vh]"
             src="/documents/text.svg"
             alt=""
           />
