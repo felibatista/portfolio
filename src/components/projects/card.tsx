@@ -40,7 +40,7 @@ export function ProjectCard({
         onMouseEnter={handleHover}
         onMouseLeave={() => setHover("")}
       >
-        <div className="p-8">
+        <div className="p-[4vh]">
           <div className="gap-4 hidden md:flex">
             {techs.map((tech) => (
               <div
