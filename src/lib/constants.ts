@@ -104,6 +104,11 @@ export const SKILLS = [
     description: "+2 años de experiencia",
   },
   {
+    name: "EXPRESS.JS",
+    icon: "/skills/express.svg",
+    description: "+2 años de experiencia",
+  },
+  {
     name: "ANGULAR",
     icon: "/skills/angular.svg",
     description: "+2 años de experiencia",
