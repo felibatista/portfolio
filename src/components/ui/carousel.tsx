@@ -138,7 +138,8 @@ const Carousel = React.forwardRef<
           className={cn("relative", className)}
           role="region"
           aria-roledescription="carousel"
-          {...props}
+          
+        
           initial={{ opacity: 0, y: 100 }}
           whileInView={{
             opacity: 1,

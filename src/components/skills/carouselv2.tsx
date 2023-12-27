@@ -16,7 +16,7 @@ export function CarouselSize() {
       opts={{
         align: "start",
       }}
-      className="w-full max-w-sm md:max-w-md lg:max-w-lg xl:max-w-[60%] mx-auto mt-[4vh]"
+      className="w-full max-w-sm md:max-w-md lg:max-w-lg xl:max-w-[50%] mx-auto mt-[4vh]"
     >
       <CarouselContent>
         {SKILLS.map((item, index) => (
