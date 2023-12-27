@@ -19,6 +19,8 @@ export default function Page() {
       <SkillsTemplate />
       <ProjectsTemplate />
       <ContactTemplate />
+
+      <Footer contrast={false} />
     </div>
   );
 }

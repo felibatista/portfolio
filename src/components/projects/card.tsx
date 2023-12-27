@@ -70,7 +70,7 @@ export function ProjectCard({
         <img
           src={link}
           alt={name}
-          className="hidden md:flex w-full h-full object-cover rounded-xl group-hover:scale-[1.15] scale-110 transform transition-all duration-300"
+          className="hidden relative bottom-[-10vh] md:flex w-full h-full object-cover rounded-xl group-hover:scale-[1.15] scale-110 transform transition-all duration-300"
         />
       </div>
     </motion.div>

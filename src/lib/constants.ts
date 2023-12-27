@@ -138,9 +138,9 @@ export const PROJECTS = [
     name: "URL Shortener",
     description:
       "Sistema de acortamiento de URL con gestión de autenticación y de usuarios. Cuenta con un panel de administración para gestionar las URL, usuarios y suscripciones.",
-    image: "/projects/project1.png",
-    techs: [".NET", "React", "Next.js", "Postgres SQL"],
-    link: "https://assets-global.website-files.com/622fbc5a718ac357e4cd3da3/623227a7644f41349873cd60_defi-thumbnail-image-developer-webflow-ecommerce-template-p-500.png",
+    image: "/projects/url.png",
+    techs: [".NET", "React", "Next.js", "SQLite"],
+    link: "/projects/url.png",
   },
   {
     name: "Conversor de monedas",

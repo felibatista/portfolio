@@ -1,8 +1,11 @@
+import { cn } from "@/lib/utils";
 import { ChevronUpIcon } from "@radix-ui/react-icons";
 
-export function Footer() {
+export function Footer({contrast}: {contrast?: boolean}) {
   return (
-    <div className="bg-[#18181b] md:pt-[2rem] pt-[1rem]">
+    <div className={cn("bg-[#18181b] md:pt-[2rem] pt-[1rem]", {
+      "bg-[#242428]": contrast === true || contrast === undefined,
+    })}>
       <footer className="max-w-[80%] text-description-sm px-4 pb-8 mx-auto flex flex-col-reverse md:flex-row justify-between gap-[1rem] md:gap-0 items-center">
         <p>Copyright © Felipe Batista | Powered by Github Pages</p>
 

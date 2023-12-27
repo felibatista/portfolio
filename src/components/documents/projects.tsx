@@ -30,7 +30,7 @@ export function DocumentsProjectsSection() {
 
         <DocumentsProjectCard
           title={"Conversor de monedas"}
-          techs={"Angular, NextJS, TailwindCSS, SQLite, TypeScript, .NET, C#"}
+          techs={"Angular, DaisyUI, TailwindCSS, SQLite, TypeScript, .NET, C#"}
           description={
             "Este proyecto fue realizado para una materia en la facultad, el cual consiste en un conversor de monedas. El mismo se conecta a una API externa para obtener los datos de las monedas y realizar las conversiones. Cuenta con un sistema de autenticación y registro de usuarios, para que puedan guardar sus conversiones. Además de eso, cuenta con un sistema de administración para manejar la aplicación."
           }
@@ -39,6 +39,19 @@ export function DocumentsProjectsSection() {
           sourceCodeUrl={"https://github.com/felibatista/coins-conversor"}
           images={["/documents/conversor.png", "/documents/conversor-2.png"]}
           time={"1 semana"}
+        ></DocumentsProjectCard>
+
+        <DocumentsProjectCard
+          title={"URL Shortener"}
+          techs={"React, NextJS, TailwindCSS, SQLite, TypeScript, .NET, C#"}
+          description={
+            "Esta aplicación permite acortar URLs, para que sean más fáciles de compartir. Cuenta con un sistema de autenticación y registro de usuarios, para que puedan guardar sus URLs acortadas. Cada URL tendrá una o más categorías asignadas, para que puedan ser filtradas en el panel de usuario, donde también habrá información sobre ellas."
+          }
+          path={"/url-shortener"}
+          structure={"Monolítica"}
+          sourceCodeUrl={"https://github.com/felibatista/url-shortener"}
+          images={["/documents/links-1.png", "/documents/links-3.png"]}
+          time={"5 días"}
         ></DocumentsProjectCard>
       </Section>
     </div>
