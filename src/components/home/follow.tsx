@@ -21,7 +21,7 @@ export function HomeFollowItems() {
 
   function handleToast(link: string) {
     toast({
-      className: "bg-background-primary text-white border-0",
+      className: "bg-background-primary text-black border-0",
       title: "¡Datos copiados al portapapeles correctamente!",
       description: "Contenido: " + link,
     });

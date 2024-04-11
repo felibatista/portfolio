@@ -32,10 +32,10 @@ const theme = {
         "linear-gradient(195deg, #5a5a66 0%, #3d3d45 50%, #242428 100%)",
     },
     colors: {
-      primary: "#443C68",
-      secondary: "#2D3250",
-      "background-primary": "#424769",
-      "background-secondary": "#7077A1",
+      primary: "#1D2F6F",
+      secondary: "#8390FA",
+      "background-primary": "#F8F7FF",
+      "background-secondary": "#ffffff",
     },
     borderRadius: {
       lg: "var(--radius)",
