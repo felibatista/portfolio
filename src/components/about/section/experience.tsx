@@ -15,9 +15,9 @@ export function AboutSectionExperience() {
           <p>años de experiencia</p>
         </div>
 
-        <div className="flex items-center gap-2 font-bold justify-center md:justify-start">
+        <div className="flex items-center gap-2 font-bold justify-center md:justify-start w-fit mx-auto">
           <h3 className="text-[8vh]">+10</h3>
-          <p>proyectos terminados</p>
+          <p>proyectos</p>
         </div>
       </div>
 
