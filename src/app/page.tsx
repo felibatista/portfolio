@@ -17,7 +17,7 @@ export default function Page() {
       <HomeTemplate />
       <AboutSectionTemplate />
       <SkillsTemplate />
-      <ProjectsTemplate />
+      {/*<ProjectsTemplate />*/}
       <ContactTemplate />
 
       <Footer contrast={false} />
