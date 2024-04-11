@@ -159,7 +159,7 @@ export function ContactForm() {
       <button
         disabled={loading}
         onClick={handleSubmit}
-        className="bg-primary text-white font-semibold rounded-xl p-2 hover:scale-105 transition-all"
+        className="bg-background-secondary text-white font-semibold rounded-xl p-2 hover:scale-105 transition-all"
       >
         Enviar mensaje{loading && "..."}
       </button>

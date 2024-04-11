@@ -20,7 +20,7 @@ export default function Page() {
       {/*<ProjectsTemplate />*/}
       <ContactTemplate />
 
-      <Footer contrast={false} />
+      <Footer contrast={true} />
     </div>
   );
 }

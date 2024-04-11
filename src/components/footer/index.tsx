@@ -5,7 +5,7 @@ export function Footer({ contrast }: { contrast?: boolean }) {
   return (
     <div
       className={cn("bg-background-primary md:pt-[2rem] pt-[1rem]", {
-        "bg-[#242428]": contrast === true || contrast === undefined,
+        "bg-background-secondary": contrast === true || contrast === undefined,
       })}
     >
       <footer className="max-w-[80%] text-description-sm px-4 pb-8 mx-auto text-center flex flex-col-reverse md:flex-row justify-between gap-[1rem] md:gap-0 items-center">
