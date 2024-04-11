@@ -101,7 +101,7 @@ export function ContactForm() {
       initial={{ opacity: 0, x: 100 }}
       whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
       viewport={{ once: true }}
-      className="flex text-description-sm mt-10 md:mt-0 flex-col gap-[3vh] [&>div>h4]:font-semibold [&>div>input]:bg-transparent [&>div>input]:border [&>div>input]:border-gray-300 [&>div>input]:rounded-xl [&>div>input]:p-2 [&>div>input]:border-opacity-50 [&>div]:flex [&>div]:flex-col [&>div]:gap-2"
+      className="flex text-description-sm mt-10 md:mt-0 flex-col gap-[3vh] [&>div>h4]:font-semibold [&>div>input]:bg-transparent [&>div>input]:border [&>div>input]:border-gray-300 [&>div>input]:rounded-xl [&>div>input]:p-2 [&>div>input]:border-opacity-80 [&>div]:flex [&>div]:flex-col [&>div]:gap-2"
     >
       <div>
         <h4>Nombre y apellido</h4>
@@ -150,7 +150,7 @@ export function ContactForm() {
             setMessage(e.target.value);
             setMessageError("");
           }}
-          className="border border-gray-300 rounded-xl p-2 border-opacity-50 bg-transparent max-h-[50vh]"
+          className="border border-gray-300 rounded-xl p-2 border-opacity-80 bg-transparent max-h-[50vh]"
           placeholder="Hola Felipe, me gustaría trabajar contigo en un proyecto..."
         />
 
@@ -159,7 +159,7 @@ export function ContactForm() {
       <button
         disabled={loading}
         onClick={handleSubmit}
-        className="bg-background-secondary text-black font-semibold rounded-xl p-2 hover:scale-105 transition-all"
+        className="bg-background-secondary text-black font-semibold rounded-xl p-2 hover:scale-105 transition-all border border-black border-opacity-20"
       >
         Enviar mensaje{loading && "..."}
       </button>

@@ -7,14 +7,15 @@ export function HomeHero() {
     <motion.div
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
-      className="flex flex-col justify-end text-center md:text-left my-[2rem] md:my-0"
+      className="flex flex-col md:justify-end justify-center  text-center md:text-left md:my-0"
     >
-      <h1 className="font-bold text-title leading-[1.1] pb-4 border-b-[10px] border-white">
-        Soy <span className="text-primary">Felipe Batista</span>,
-        <br />
-        Desarollador <span className="text-primary">Back-End</span>
+      <h1 className="font-bold text-title leading-[1.1] pb-2">
+        <span className="text-primary">FELIPE BATISTA </span>
       </h1>
-      <p className="mt-4 text-description">
+      <span className=" text-xl font-semibold pb-2">
+      @ Backend Developer
+      </span>
+      <p className="mt-1 text-description">
         Mi enfoque se centra en la implementación de lógica de servidor, gestión
         de bases de datos, sistemas de seguridad, optimización del rendimiento.
         Además de la escabilidad y el código limpio.
