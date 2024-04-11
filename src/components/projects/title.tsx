@@ -11,12 +11,12 @@ export function ProjectsTitle() {
       viewport={{ once: true }}
       className="flex flex-col gap-4 lg:py-8 lg:pr-8 items-center lg:items-start h-fit row-span-1"
     >
-        <h3 className="font-semibold text-description flex items-center mb-4">
-          <span className="font-extrabold md:mr-2 text-[4vh] text-[#7d6b6b]">
-            /
-          </span>
-          PROYECTOS
-        </h3>
+      <h3 className="font-semibold text-description flex items-center mb-4">
+        <span className="font-extrabold md:mr-2 text-[4vh] text-secondary">
+          /
+        </span>
+        PROYECTOS
+      </h3>
       <h4 className="font-bold text-title leading-[1.1] lg:text-start text-center">
         Mi trabajo personal más reciente
       </h4>
@@ -26,10 +26,7 @@ export function ProjectsTitle() {
         estoy buscando aprender nuevas tecnologías y mejorar mis habilidades.`}
       </p>
 
-      <ButtonLink
-        name="VER TODOS LOS PROYECTOS"
-        href="/documents"
-      />
+      <ButtonLink name="VER TODOS LOS PROYECTOS" href="/documents" />
     </motion.div>
   );
 }

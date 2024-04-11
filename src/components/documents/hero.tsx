@@ -9,7 +9,7 @@ export function DocumentsHero() {
       className="flex flex-col items-center justify-center w-full z-[11] flex-1 md:pb-[6rem]"
     >
       <h3 className="font-semibold text-description flex items-center mb-4">
-        <span className="font-extrabold md:mr-2 text-[4vh] text-[#7d6b6b]">
+        <span className="font-extrabold md:mr-2 text-[4vh] text-secondary">
           /
         </span>
         DOCUMENTACIONES

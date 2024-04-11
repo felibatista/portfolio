@@ -35,7 +35,7 @@ export function NavbarMenuTrigger() {
             }}
             initial={{ opacity: 0, scale: 0.2, borderRadius: "100%" }}
             animate={{ opacity: 1, scale: 1, borderRadius: "0%" }}
-            className="w-screen h-screen fixed left-0 top-0 z-10 bg-[#221d1d]"
+            className="w-screen h-screen fixed left-0 top-0 z-10 bg-primary"
           >
             <motion.ul
               exit={{ opacity: 0, transition: { duration: 0.2 } }}

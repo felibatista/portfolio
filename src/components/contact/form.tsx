@@ -3,8 +3,7 @@
 import { useState } from "react";
 import { useToast } from "../ui/use-toast";
 import { motion } from "framer-motion";
-import { Resend } from 'resend';
-
+import { Resend } from "resend";
 
 export function ContactForm() {
   //const resend = new Resend(process.env.RESEND_API_KEY);
@@ -57,7 +56,7 @@ export function ContactForm() {
       subject: "PORTOFOLIO - " + name + " - " + email,
       text: "" + message,
     });*/
-    
+
     const sendEmail = await fetch(
       "https://www.acentus.agency/api/resend?email=" +
         email +
@@ -69,7 +68,7 @@ export function ContactForm() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          'Access-Control-Allow-Origin': '*',
+          "Access-Control-Allow-Origin": "*",
         },
       }
     );
@@ -82,7 +81,7 @@ export function ContactForm() {
 
     if (res.success) {
       toast({
-        className: "bg-[#18181b] text-white border-0",
+        className: "bg-background-primary text-white border-0",
         title: "¡Mensaje enviado!",
         description: "Recibirás una respuesta en menos de 2 días habiles.",
       });
@@ -98,11 +97,12 @@ export function ContactForm() {
   };
 
   return (
-    <motion.div 
-    initial={{ opacity: 0, x: 100 }}
-    whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
-    viewport={{ once: true }}
-    className="flex text-description-sm mt-10 md:mt-0 flex-col gap-[3vh] [&>div>h4]:font-semibold [&>div>input]:bg-transparent [&>div>input]:border [&>div>input]:border-gray-300 [&>div>input]:rounded-xl [&>div>input]:p-2 [&>div>input]:border-opacity-50 [&>div]:flex [&>div]:flex-col [&>div]:gap-2">
+    <motion.div
+      initial={{ opacity: 0, x: 100 }}
+      whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
+      viewport={{ once: true }}
+      className="flex text-description-sm mt-10 md:mt-0 flex-col gap-[3vh] [&>div>h4]:font-semibold [&>div>input]:bg-transparent [&>div>input]:border [&>div>input]:border-gray-300 [&>div>input]:rounded-xl [&>div>input]:p-2 [&>div>input]:border-opacity-50 [&>div]:flex [&>div]:flex-col [&>div]:gap-2"
+    >
       <div>
         <h4>Nombre y apellido</h4>
 
@@ -159,7 +159,7 @@ export function ContactForm() {
       <button
         disabled={loading}
         onClick={handleSubmit}
-        className="bg-[#7d6b6b] text-white font-semibold rounded-xl p-2 hover:scale-105 transition-all"
+        className="bg-primary text-white font-semibold rounded-xl p-2 hover:scale-105 transition-all"
       >
         Enviar mensaje{loading && "..."}
       </button>

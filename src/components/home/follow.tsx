@@ -21,7 +21,7 @@ export function HomeFollowItems() {
 
   function handleToast(link: string) {
     toast({
-      className: "bg-[#18181b] text-white border-0",
+      className: "bg-background-primary text-white border-0",
       title: "¡Datos copiados al portapapeles correctamente!",
       description: "Contenido: " + link,
     });
@@ -54,7 +54,12 @@ export function HomeFollowItems() {
                   <img src={item.icon} alt={item.name} className="h-[4vh]" />
                 </a>
               ) : (
-                <img onClick={() => handleToast(item.link)} src={item.icon} alt={item.name} className="h-[4vh]" />
+                <img
+                  onClick={() => handleToast(item.link)}
+                  src={item.icon}
+                  alt={item.name}
+                  className="h-[4vh]"
+                />
               )}
             </motion.li>
           ))}

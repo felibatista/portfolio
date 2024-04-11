@@ -17,7 +17,7 @@ export function HomeTemplate() {
         <img
           src="me.png"
           alt=""
-          className="absolute hidden md:block bottom-[-4rem] mx-auto left-[50%] translate-x-[-50%] h-full z-[1] opacity-40"
+          className="absolute hidden md:block bottom-[-4rem] mx-auto left-[50%] translate-x-[-50%] h-full z-[1] opacity-60"
         />
       </motion.div>
       <NavbarTemplate />

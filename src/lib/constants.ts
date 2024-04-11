@@ -8,8 +8,8 @@ export const NAVBAR_ITEMS = [
     path: "about",
   },
   {
-    name: "Documentaciones",
-    path: "documents",
+    name: "Templates",
+    path: "templates",
   },
   {
     name: "Contacto",

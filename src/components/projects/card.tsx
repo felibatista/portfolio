@@ -43,10 +43,7 @@ export function ProjectCard({
         <div className="p-[4vh]">
           <div className="gap-4 hidden md:flex">
             {techs.map((tech) => (
-              <div
-                key={tech}
-                className="px-4 py-2 bg-[#7d6b6b] rounded-lg w-fit"
-              >
+              <div key={tech} className="px-4 py-2 bg-primary rounded-lg w-fit">
                 <h3 className="text-description-sm">{tech}</h3>
               </div>
             ))}
@@ -57,10 +54,7 @@ export function ProjectCard({
           <p className=" text-description mt-3">{description}</p>
           <div className="gap-2 md:hidden flex mt-4 flex-wrap">
             {techs.map((tech) => (
-              <div
-                key={tech}
-                className="px-4 py-2 bg-[#7d6b6b] rounded-lg w-fit"
-              >
+              <div key={tech} className="px-4 py-2 bg-primary rounded-lg w-fit">
                 <h3 className="text-lg">{tech}</h3>
               </div>
             ))}

@@ -15,7 +15,7 @@ export function SkillCard({
     <div
       className={cn(
         className,
-        "bg-[#18181b] md:rounded-xl p-[5vh] flex flex-col justify-center text-left h-[55vh] md:flex-shrink-0 snap-center items-center md:items-start relative w-auto"
+        "bg-background-primary md:rounded-xl p-[5vh] flex flex-col justify-center text-left h-[55vh] md:flex-shrink-0 snap-center items-center md:items-start relative w-auto"
       )}
     >
       <img src={image} alt={title} className="h-[15vh]" />

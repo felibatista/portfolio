@@ -16,13 +16,13 @@ export function AboutPageHero() {
         className="flex flex-col items-center justify-center w-full z-[11] flex-1 md:pb-[6rem]"
       >
         <h3 className="font-semibold text-description flex items-center mb-4">
-          <span className="font-extrabold md:mr-2 text-[4vh] text-[#7d6b6b]">
+          <span className="font-extrabold md:mr-2 text-[4vh] text-secondary">
             /
           </span>
           SOBRE MI
         </h3>
         <h1 className="font-bold text-title leading-[1.1] pb-2 text-center">
-          Mi vida en <span className="text-[#b19797]">detalle</span>
+          Mi vida en <span className="text-primary">detalle</span>
         </h1>
         <p className="mt-4 text-description text-center flex h-fit">
           Me llamo Felipe Batista, tengo 19 años y soy de Argentina. Soy una

@@ -9,7 +9,7 @@ export function AboutPageMe() {
   return (
     <div
       id="me"
-      className="bg-[#18181b] flex items-center shrink-0 z-10 md:py-[7rem] py-[3rem]"
+      className="bg-background-primary flex items-center shrink-0 z-10 md:py-[7rem] py-[3rem]"
     >
       <Section>
         <div className="flex flex-col lg:gap-[30vh] gap-[5rem]">

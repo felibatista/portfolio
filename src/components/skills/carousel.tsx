@@ -24,7 +24,7 @@ export function SkillsCarousel() {
         transition: { duration: 0.5, delay: 0.2 },
       }}
       viewport={{ once: true }}
-      className="px-0 md:mt-10 m-0 max-w-max mx-auto"
+      className="px-4 md:px-0 md:mt-10 m-0 max-w-max mx-auto"
     >
       <div className="flex items-center justify-center w-full h-full py-12 sm:py-8">
         {/* Carousel for desktop and large size devices */}

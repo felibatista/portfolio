@@ -16,8 +16,8 @@ const theme = {
   },
   extend: {
     fontSize: {
-      "title": "6vh",
-      "description": "2.5vh",
+      title: "6vh",
+      description: "2.5vh",
       "title-sm": "3vh",
       "description-sm": "2.2vh",
     },
@@ -32,39 +32,10 @@ const theme = {
         "linear-gradient(195deg, #5a5a66 0%, #3d3d45 50%, #242428 100%)",
     },
     colors: {
-      border: "hsl(var(--border))",
-      input: "hsl(var(--input))",
-      ring: "hsl(var(--ring))",
-      background: "hsl(var(--background))",
-      foreground: "hsl(var(--foreground))",
-      primary: {
-        DEFAULT: "hsl(var(--primary))",
-        foreground: "hsl(var(--primary-foreground))",
-      },
-      secondary: {
-        DEFAULT: "hsl(var(--secondary))",
-        foreground: "hsl(var(--secondary-foreground))",
-      },
-      destructive: {
-        DEFAULT: "hsl(var(--destructive))",
-        foreground: "hsl(var(--destructive-foreground))",
-      },
-      muted: {
-        DEFAULT: "hsl(var(--muted))",
-        foreground: "hsl(var(--muted-foreground))",
-      },
-      accent: {
-        DEFAULT: "hsl(var(--accent))",
-        foreground: "hsl(var(--accent-foreground))",
-      },
-      popover: {
-        DEFAULT: "hsl(var(--popover))",
-        foreground: "hsl(var(--popover-foreground))",
-      },
-      card: {
-        DEFAULT: "hsl(var(--card))",
-        foreground: "hsl(var(--card-foreground))",
-      },
+      primary: "#443C68",
+      secondary: "#2D3250",
+      "background-primary": "#424769",
+      "background-secondary": "#7077A1",
     },
     borderRadius: {
       lg: "var(--radius)",
