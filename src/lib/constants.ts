@@ -31,18 +31,6 @@ export const SOCIAL_LINKS = [
     icon: "/icons/linkedin.svg",
   },
   {
-    name: "Twitter",
-    link: "https://twitter.com/felibatista_",
-    copy: false,
-    icon: "/icons/twitter.svg",
-  },
-  {
-    name: "Instagram",
-    link: "https://www.instagram.com/felibatista_/",
-    copy: false,
-    icon: "/icons/instagram.svg",
-  },
-  {
     name: "Discord",
     link: "felibatista_",
     copy: true,
