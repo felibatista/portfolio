@@ -12,7 +12,7 @@ export default function Section({
     <div
       className={cn(
         className,
-        "min-h-screen snap-start md:max-w-[80%]  px-4 pb-8 mx-auto flex"
+        "min-h-screen snap-start md:max-w-[88%] px-4 pb-8 mx-auto flex"
       )}
     >
       {children}

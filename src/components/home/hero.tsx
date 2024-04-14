@@ -26,9 +26,11 @@ export function HomeHero() {
       </div>
 
       <p className="mt-1 text-description">
-        Mi enfoque se centra en la implementación de lógica de servidor, gestión
-        de bases de datos, sistemas de seguridad, optimización del rendimiento.
-        Además del despliegue de aplicaciones en servidores AWS y Azure.
+        Tengo experiencia en la administración y despliegue de servidores de AWS
+        y Azure, así como en contenedores Docker, Kubernetes y microservicios. Participe en proyectos que integraron GPT-4 y otros modelos
+        para servicios de IA. Uno de mis puntos fuertes es mi experiencia en bases de
+        datos, donde he trabajado con un gran flujo de datos y consultas
+        sofisticadas.
       </p>
 
       <button className="bg-background-secondary inline-flex mt-4 items-center md:mx-0 px-4 mx-auto text-black rounded-xl py-2 w-fit hover:scale-105 transition-all border border-black border-opacity-20">
