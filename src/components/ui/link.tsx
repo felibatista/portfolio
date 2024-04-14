@@ -9,10 +9,14 @@ export function ButtonLink({
   name,
   href,
   className,
+  target,
+  onClick
 }: {
   name: string;
   href: string;
   className?: string;
+  target?: string;
+  onClick?: () => void;
 }) {
   const [hover, setHover] = useState(false);
 
@@ -20,6 +24,8 @@ export function ButtonLink({
     <AnimatePresence>
       <a
         href={href}
+        onClick={onClick}
+        target={target}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
         className={cn(

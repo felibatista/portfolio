@@ -27,7 +27,7 @@ export function AboutSectionMe() {
         por la curiosidad de saber como funcionaba todo por "debajo del capó"`}
       </p>
 
-      <ButtonLink name="MÁS SOBRE MI" href="/about" />
+      <ButtonLink name="Más sobre mi" href="/about" />
     </motion.div>
   );
 }

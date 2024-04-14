@@ -4,6 +4,13 @@ import { ChevronDownIcon, DownloadIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 
 export function HomeHero() {
+  const downloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "cv.pdf";
+    link.download = "CV - Felipe Batista - Backend Developer.pdf";
+    link.click();
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, x: -100 }}
@@ -34,7 +41,13 @@ export function HomeHero() {
         sofisticadas.
       </p>
 
-      <button className="bg-background-secondary inline-flex mt-4 items-center md:mx-0 px-4 mx-auto text-black rounded-xl py-2 w-fit hover:scale-105 transition-all border border-black border-opacity-20">
+      <button
+        onClick={downloadCV}
+        style={{
+          boxShadow: "-3px 1px 20px 11px rgba(29,47,111,0.20)",
+        }}
+        className="bg-background-secondary inline-flex mt-4 items-center md:mx-0 px-4 mx-auto text-black rounded-xl py-2 w-fit hover:scale-105 transition-all border border-black border-opacity-20"
+      >
         Descargar CV <DownloadIcon className="h-[2.5vh] w-[2.5vh] ml-2" />
       </button>
     </motion.div>

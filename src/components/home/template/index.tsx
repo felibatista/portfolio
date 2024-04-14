@@ -7,12 +7,12 @@ import { NavbarTemplate } from "@/components/navbar/template";
 
 export function HomeTemplate() {
   return (
-    <Section className="flex-col relative overflow-hidden snap-center">
+    <Section className="flex-col relative snap-center">
       <motion.div
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
-        className="absolute hidden md:block bottom-0 left-0 right-0 top-0 z-[1]"
+        className="absolute hidden md:block bottom-0 left-0 right-0 top-0 z-[1] overflow-hidden"
       >
         <img
           src="me.png"

@@ -27,7 +27,7 @@ export function AboutPageHero() {
           </h1>
 
           <img src="/underlines/cyan.png" alt=""
-            className="absolute bottom-0 left-[50%] translate-x-[-50%] md:translate-x-0 md:left-[23vh] h-[3vh] w-[70vh] md:w-[35vh] opacity-30 md:opacity-50 z-[10]"
+            className="absolute bottom-0 left-[50%] translate-x-[-50%] md:translate-x-0 md:left-[23vh] h-[3vh] w-[70vh] md:hidden md:w-[35vh] opacity-30 md:opacity-50 z-[10]"
           />
         </div>
         <p className="mt-4 text-description-sm md:text-description text-center flex h-fit max-w-[800px]">

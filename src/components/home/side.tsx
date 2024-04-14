@@ -15,24 +15,32 @@ export function HomeRightSide() {
         <h2 className="font-semibold text-title-sm md:text-title-sm text-primary">
           SOBRE MI{" "}
         </h2>
-        <p className="text-description-sm md:text-description-sm">
+        <p className="text-description-sm">
           Me encanta enfrentar desafíos técnicos y encontrar soluciones
           innovadoras para optimizar el funcionamiento de las aplicaciones.
         </p>
 
-        <ButtonLink name="LEER MÁS" href="/about" className="mt-4" />
+        <ButtonLink name="Leer más" href="/about" className="mt-4" />
       </div>
 
       <div className="flex-col gap-2 pb-6 border-b border-white border-opacity-30 hidden md:flex">
         <h2 className="font-semibold text-title-sm md:text-title-sm text-primary">
-          PROYECTOS
+          EXPERIENCIA
         </h2>
-        <p className="text-description-sm md:text-description-sm">
+        <p className="text-description-sm">
           Estos son algunos de los proyectos en los que he trabajado. Si desea
           ver más y sus procesos, puede consultar mi perfil de Github.
         </p>
 
-        <ButtonLink name="VER TODO" href="/about" className="mt-4" />
+        <ButtonLink
+          onClick={() => {
+            const element = document.querySelector("#experience");
+            element?.scrollIntoView({ behavior: "smooth" });
+          }}
+          name="Ver más"
+          href="#"
+          className="mt-4"
+        />
       </div>
 
       <HomeFollowItems />

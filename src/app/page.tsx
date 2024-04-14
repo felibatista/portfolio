@@ -8,6 +8,7 @@ import { ContactTemplate } from "@/components/contact/template";
 import { AboutSectionTemplate } from "@/components/about/template/section";
 import { ProjectsTemplate } from "@/components/projects/template";
 import { SkillsTemplate } from "@/components/skills/template";
+import ExperienceTemplate from "@/components/experience/template";
 
 export default function Page() {
   return (
@@ -17,10 +18,11 @@ export default function Page() {
       <HomeTemplate />
       <AboutSectionTemplate />
       <SkillsTemplate />
+      <ExperienceTemplate />
       {/*<ProjectsTemplate />*/}
       <ContactTemplate />
 
-      <Footer contrast={true} />
+      <Footer contrast={false} />
     </div>
   );
 }
