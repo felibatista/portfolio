@@ -18,7 +18,7 @@ const theme = {
     fontSize: {
       title: "6vh",
       description: "2.5vh",
-      "title-sm": "3vh",
+      "title-sm": "4.5vh",
       "description-sm": "2.2vh",
     },
 

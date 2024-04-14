@@ -10,11 +10,11 @@ export function HomeHero() {
       animate={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
       className="flex flex-col md:justify-end justify-center  text-center md:text-left md:my-0"
     >
-      <h1 className="font-bold text-title leading-[1.1] pb-2">
+      <h1 className="font-bold text-title-sm md:text-title leading-[1.1] pb-2">
         <span className="text-primary">FELIPE BATISTA </span>
       </h1>
       <div className="relative">
-        <span className=" text-description font-semibold pb-2">
+        <span className=" text-description-sm md:text-description font-semibold pb-2">
           @ Backend Developer
         </span>
 
@@ -25,10 +25,11 @@ export function HomeHero() {
         />
       </div>
 
-      <p className="mt-1 text-description">
+      <p className="mt-1 text-description-sm md:text-description-sm">
         Tengo experiencia en la administración y despliegue de servidores de AWS
-        y Azure, así como en contenedores Docker, Kubernetes y microservicios. Participe en proyectos que integraron GPT-4 y otros modelos
-        para servicios de IA. Uno de mis puntos fuertes es mi experiencia en bases de
+        y Azure, así como en contenedores Docker, Kubernetes y microservicios.
+        Participe en proyectos que integraron GPT-4 y otros modelos para
+        servicios de IA. Uno de mis puntos fuertes es mi experiencia en bases de
         datos, donde he trabajado con un gran flujo de datos y consultas
         sofisticadas.
       </p>

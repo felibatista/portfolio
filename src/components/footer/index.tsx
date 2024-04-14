@@ -8,7 +8,7 @@ export function Footer({ contrast }: { contrast?: boolean }) {
         "bg-background-secondary": contrast === true || contrast === undefined,
       })}
     >
-      <footer className="max-w-[80%] text-description-sm px-4 pb-8 mx-auto text-center flex flex-col-reverse md:flex-row justify-between gap-[1rem] md:gap-0 items-center">
+      <footer className="max-w-[80%] text-description-sm md:text-description-sm px-4 pb-8 mx-auto text-center flex flex-col-reverse md:flex-row justify-between gap-[1rem] md:gap-0 items-center">
         <p>Copyright © Felipe Batista | Powered by Github Pages</p>
 
         <button

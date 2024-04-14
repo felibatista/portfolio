@@ -32,7 +32,9 @@ export function HomeFollowItems() {
   return (
     <div className="flex flex-col gap-2">
       <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <h2 className="font-bold text-title-sm text-primary">CONTACTO</h2>
+        <h2 className="font-bold text-title-sm md:text-title-sm text-primary">
+          CONTACTO
+        </h2>
         <ul className="flex text-[20px] mt-4">
           {SOCIAL_LINKS.map((item) => (
             <motion.li

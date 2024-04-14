@@ -24,7 +24,7 @@ export function ButtonLink({
         onMouseLeave={() => setHover(false)}
         className={cn(
           className,
-          "underline text-description mt-[1vh] underline-offset-[6px] inline-flex cursor-pointer opacity-80 hover:opacity-100 transition-all hover:translate-x-2 hover:scale-[1.02]"
+          "underline text-description-sm md:text-description mt-[1vh] underline-offset-[6px] inline-flex cursor-pointer opacity-80 hover:opacity-100 transition-all hover:translate-x-2 hover:scale-[1.02]"
         )}
       >
         {name}

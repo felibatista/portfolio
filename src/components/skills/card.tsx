@@ -20,8 +20,12 @@ export function SkillCard({
     >
       <img src={image} alt={title} className="h-[15vh]" />
 
-      <h3 className="text-title-sm font-bold uppercase mt-6">{title}</h3>
-      <p className="text-gray-400 text-description-sm">{description}</p>
+      <h3 className="text-title-sm md:text-title-sm font-bold uppercase mt-6">
+        {title}
+      </h3>
+      <p className="text-gray-400 text-description-sm md:text-description-sm">
+        {description}
+      </p>
     </div>
   );
 }

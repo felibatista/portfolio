@@ -101,7 +101,7 @@ export function ContactForm() {
       initial={{ opacity: 0, x: 100 }}
       whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
       viewport={{ once: true }}
-      className="flex text-description-sm mt-10 md:mt-0 flex-col gap-[3vh] [&>div>h4]:font-semibold [&>div>input]:bg-transparent [&>div>input]:border [&>div>input]:border-gray-300 [&>div>input]:rounded-xl [&>div>input]:p-2 [&>div>input]:border-opacity-80 [&>div]:flex [&>div]:flex-col [&>div]:gap-2"
+      className="flex text-description-sm md:text-description-sm mt-10 md:mt-0 flex-col gap-[3vh] [&>div>h4]:font-semibold [&>div>input]:bg-transparent [&>div>input]:border [&>div>input]:border-gray-300 [&>div>input]:rounded-xl [&>div>input]:p-2 [&>div>input]:border-opacity-80 [&>div]:flex [&>div]:flex-col [&>div]:gap-2"
     >
       <div>
         <h4>Nombre y apellido</h4>

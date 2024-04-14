@@ -17,13 +17,13 @@ export function DocumentsProjectsSection() {
           transition={{ duration: 0.4 }}
           className="flex flex-col w-full"
         >
-          <h3 className="font-semibold text-description flex items-center mb-4 justify-center md:justify-start">
+          <h3 className="font-semibold text-description-sm md:text-description flex items-center mb-4 justify-center md:justify-start">
             <span className="font-extrabold md:mr-2 text-[4vh] text-secondary">
               /
             </span>
             PROYECTOS
           </h3>
-          <h4 className="font-bold text-title leading-[1.1] lg:text-start text-center">
+          <h4 className="font-bold text-title-sm md:text-title leading-[1.1] lg:text-start text-center">
             Mis proyectos personales
           </h4>
         </motion.div>

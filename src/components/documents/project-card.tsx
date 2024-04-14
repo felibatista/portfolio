@@ -30,7 +30,7 @@ export function DocumentsProjectCard({
       transition={{ duration: 0.6 }}
       className="flex flex-col mt-[8vh] bg-[#242428] p-[3vh] rounded-xl"
     >
-      <div className="flex flex-col text-description">
+      <div className="flex flex-col text-description-sm md:text-description">
         <h4 className="font-bold text-[4vh] leading-[1.1] lg:text-start text-center">
           {title}
         </h4>
@@ -68,7 +68,11 @@ export function DocumentsProjectCard({
           </ul>
 
           <div className="font-semibold flex items-center gap-[1.5vh] ">
-            <img src="/documents/structure.svg" alt="" className="h-[6vh] w-[4vh]" />
+            <img
+              src="/documents/structure.svg"
+              alt=""
+              className="h-[6vh] w-[4vh]"
+            />
             <p>
               Tipo de estructura:{" "}
               <span className="font-normal">{structure}</span>
@@ -76,7 +80,11 @@ export function DocumentsProjectCard({
           </div>
 
           <div className="font-semibold flex items-center ">
-            <img src="/documents/time.svg" alt="" className="h-[6vh] w-[5.5vh]" />
+            <img
+              src="/documents/time.svg"
+              alt=""
+              className="h-[6vh] w-[5.5vh]"
+            />
             <p>
               Tiempo de desarrollo: <span className="font-normal">{time}</span>
             </p>

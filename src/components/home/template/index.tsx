@@ -22,7 +22,7 @@ export function HomeTemplate() {
       </motion.div>
       <NavbarTemplate />
 
-      <div className="grid md:grid-cols-2 grid-cols-1 flex-1 md:gap-16 gap-8 md:mt-0 z-[3] mb-[2rem]">
+      <div className="grid md:grid-cols-2 grid-cols-1 flex-1 md:gap-16 gap-8 md:mt-0 z-[3] mb-[2rem] px-2 items-end">
         <HomeHero />
         <HomeRightSide />
       </div>

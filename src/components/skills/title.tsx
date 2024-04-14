@@ -10,13 +10,13 @@ export function SkillsTitle() {
       viewport={{ once: true }}
       className="flex flex-col gap-4 items-center lg:items-center mx-2"
     >
-      <h3 className="font-semibold text-description flex items-center mb-4">
+      <h3 className="font-semibold text-description-sm md:text-description flex items-center mb-4">
         <span className="font-extrabold md:mr-2 text-[4vh] text-secondary">
           /
         </span>
         HABILIDADES
       </h3>
-      <h4 className="font-bold text-title leading-[1.1] text-center ">
+      <h4 className="font-bold text-title-sm md:text-title leading-[1.1] text-center ">
         Mis herramientas en el desarrollo
       </h4>
     </motion.div>
