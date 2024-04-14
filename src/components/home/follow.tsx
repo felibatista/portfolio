@@ -42,7 +42,7 @@ export function HomeFollowItems() {
               whileHover={{ translateY: "-5px", transition: { duration: 0.1 } }}
               onClick={() => setData(item.name)}
               className={cn(
-                "px-3 transition-all duration-300",
+                "px-[1.5vh] transition-all duration-300",
                 isHover ? "opacity-30 hover:opacity-100 cursor-pointer" : ""
               )}
             >

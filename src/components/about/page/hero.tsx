@@ -21,10 +21,16 @@ export function AboutPageHero() {
           </span>
           SOBRE MI
         </h3>
-        <h1 className="font-bold text-title-sm md:text-title leading-[1.1] pb-2 text-center">
-          Mi vida en <span className="text-primary">detalle</span>
-        </h1>
-        <p className="mt-4 text-description-sm md:text-description text-center flex h-fit">
+        <div className="relative">
+          <h1 className="font-bold text-title-sm md:text-title leading-[1.1] pb-2 text-center z-[0]">
+            Mi vida en detalle
+          </h1>
+
+          <img src="/underlines/cyan.png" alt=""
+            className="absolute bottom-0 left-[50%] translate-x-[-50%] md:translate-x-0 md:left-[23vh] h-[3vh] w-[70vh] md:w-[35vh] opacity-30 md:opacity-50 z-[10]"
+          />
+        </div>
+        <p className="mt-4 text-description-sm md:text-description text-center flex h-fit max-w-[800px]">
           Me llamo Felipe Batista, tengo 19 años y soy de Argentina. Soy una
           persona que le gusta mucho la tecnología y la programación.
           Actualmente estoy estudiando en la universidad la carrera de

@@ -9,7 +9,7 @@ export function HomeRightSide() {
     <motion.div
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: 1, x: 0, transition: { duration: 0.4, delay: 0.4 } }}
-      className="flex flex-col gap-[2vh] md:justify-end md:w-[70%] mt-[2vh] ml-auto w-full items-center text-center md:text-start md:items-start "
+      className="flex flex-col gap-[2vh] md:justify-end md:w-[70%] mt-[2vh] ml-auto w-full items-center text-center md:text-start md:items-start md:pb-0 pb-[4vh] "
     >
       <div className="flex-col gap-[1vh] pb-[2vh] border-b border-white border-opacity-30 hidden md:flex">
         <h2 className="font-semibold text-title-sm md:text-title-sm text-primary">
