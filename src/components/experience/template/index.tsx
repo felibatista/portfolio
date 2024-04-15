@@ -5,7 +5,10 @@ import JobCard from "../job-card";
 
 const ExperienceTemplate = () => {
   return (
-    <div id="experience" className="bg-background-primary snap-start z-10 overflow-hidden">
+    <div
+      id="experience"
+      className="bg-background-primary snap-start z-10 overflow-hidden"
+    >
       <Section className="flex flex-col items-center justify-center md:mt-0 my-[8vh]">
         <ExperienceTitle />
 
@@ -24,6 +27,7 @@ const ExperienceTemplate = () => {
               "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E",
               "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
               "https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white",
+              "https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white",
               "https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white",
               "https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white",
               "https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white",
@@ -35,7 +39,7 @@ const ExperienceTemplate = () => {
 
           <JobCard
             name="Acentus"
-            description="Consultora de software especializada en ofrecer soluciones personalizadas y trabajos de calidad, con un enfoque en la gestión 1 a 1. Nos destacamos por nuestra atención personalizada, asegurando que cada proyecto reciba la atención y el cuidado necesarios.x Contamos con un equipo altamente capacitado y orientado a la excelencia, y nos esforzamos por ofrecerte trabajos de calidad que impulsen tu éxito en el mercado actual."
+            description="Consultora de software especializada en ofrecer soluciones personalizadas y trabajos de calidad, con un enfoque en la gestión 1 a 1. Nos destacamos por nuestra atención personalizada, asegurando que cada proyecto reciba la atención y el cuidado necesarios. Contamos con un equipo altamente capacitado y orientado a la excelencia, y nos esforzamos por ofrecerte trabajos de calidad que impulsen tu éxito en el mercado actual."
             icon="/experience/acentus.png"
             technologiesBadges={[
               "https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white",
