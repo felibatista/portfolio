@@ -30,9 +30,18 @@ export function NavbarContainerItems() {
               isHover ? "opacity-30 hover:opacity-100" : ""
             )}
           >
-            <a href={item.path}>
-                {item.name}   
-            </a>
+            {item.path.startsWith("#") ? (
+              <button
+                onClick={() => {
+                  const element = document.querySelector(item.path);
+                  element?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                {item.name}
+              </button>
+            ) : (
+              <a href={item.path}>{item.name}</a>
+            )}
           </li>
         ))}
       </ul>

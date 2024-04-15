@@ -8,12 +8,16 @@ export const NAVBAR_ITEMS = [
     path: "about",
   },
   {
+    name: "Experiencia",
+    path: "#experience",
+  },
+  {
     name: "Templates",
     path: "templates",
   },
   {
     name: "Contacto",
-    path: "contacto",
+    path: "#contact",
   },
 ];
 

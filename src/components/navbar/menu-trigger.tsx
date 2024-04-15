@@ -48,7 +48,19 @@ export function NavbarMenuTrigger() {
             >
               {NAVBAR_ITEMS.map((item) => (
                 <li key={item.name}>
-                  <a href={item.path}>{item.name}</a>
+                  {item.path.startsWith("#") ? (
+                    <button
+                      onClick={() => {
+                        const element = document.querySelector(item.path);
+                        toggleOpen()
+                        element?.scrollIntoView({ behavior: "smooth" });
+                      }}
+                    >
+                      {item.name}
+                    </button>
+                  ) : (
+                    <a href={item.path}>{item.name}</a>
+                  )}
                 </li>
               ))}
             </motion.ul>
