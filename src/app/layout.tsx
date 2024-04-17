@@ -19,6 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
+      <head>
+        <script
+          defer
+          data-domain="felibatista.live"
+          src="https://plausible.io/js/plausible.js"
+        ></script>
+      </head>
       <body
         className={cn(inter.className, "bg-background-secondary text-black")}
       >
