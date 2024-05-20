@@ -27,7 +27,7 @@ export default function RootLayout({
         ></script>
       </head>
       <body
-        className={cn(inter.className, "bg-background-secondary text-black")}
+        className={cn(inter.className, "text-black bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]")}
       >
         {children}
       </body>
