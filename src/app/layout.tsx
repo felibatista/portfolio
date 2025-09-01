@@ -19,8 +19,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
+      <head>
+        <script
+          src="https://api-production-fa8b.up.railway.app/script/index.js"
+          data-token="XZdd2U"
+          data-api="https://api-production-fa8b.up.railway.app"
+          async
+        />
+      </head>
       <body
-        className={cn(inter.className, "text-black bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]")}
+        className={cn(
+          inter.className,
+          "text-black bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"
+        )}
       >
         {children}
       </body>
