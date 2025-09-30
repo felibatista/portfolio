@@ -12,7 +12,7 @@ export function AboutSectionExperience() {
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 font-bold text-title-sm  leading-[1.1] mt-[5rem] md:mt-0">
         <div className="flex items-center gap-[1vh] font-bold justify-center md:justify-start md:flex-row flex-col">
           <h3 className="text-[8vh]">+4</h3>
-          <p>años de experiencia</p>
+          <p className="text-center md:text-start">años de experiencia</p>
         </div>
 
         <div className="flex items-center gap-2 font-bold justify-center md:justify-start w-fit mx-auto md:flex-row flex-col">

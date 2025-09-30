@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://felibatista.lat/sitemap.xml
+
+# Specific crawling instructions
+Crawl-delay: 1
+
+# Block any admin or private directories (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all common search engine bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

@@ -18,12 +18,14 @@ export function ContactTitle() {
         CONTACTO
       </h3>
       <h4 className="font-bold text-title-sm md:text-title leading-[1.1]  md:text-start text-center">
-        ¿Estás interesado en trabajar conmigo?
+        ¿Buscas un Backend Developer? Contacta a Felipe Batista
       </h4>
 
       <p className="text-description-sm md:text-description text-center md:text-left">
-        {`Siempre estoy buscando nuevos proyectos y oportunidades. Si tienes una
-        propuesta, no dudes en contactarme.`}
+        {`Soy Felipe Batista (felibatista), Backend Developer freelance especializado en Spring Boot, .NET, Java, Python y Odoo.
+        Siempre estoy buscando nuevos proyectos y oportunidades. Si tienes una
+        propuesta, no dudes en contactarme. Puedes encontrarme en LinkedIn como felibatista o 
+        escribirme directamente desde aquí.`}
       </p>
     </motion.div>
   );

@@ -35,18 +35,6 @@ export const SOCIAL_LINKS = [
     icon: "/icons/linkedin.svg",
   },
   {
-    name: "Discord",
-    link: "felibatista_",
-    copy: true,
-    icon: "/icons/discord.svg",
-  },
-  {
-    name: "Whatsapp",
-    link: "+54 9 341 310 7794",
-    copy: true,
-    icon: "/icons/whatsapp.svg",
-  },
-  {
     name: "Email",
     link: "hellojavaa@gmail.com",
     copy: true,
@@ -66,6 +54,21 @@ export const SKILLS = [
     description: "+4 años de experiencia",
   },
   {
+    name: "PYTHON",
+    icon: "/skills/python.svg",
+    description: "+3 años de experiencia",
+  },
+  {
+    name: "ODOO",
+    icon: "/skills/odoo.svg",
+    description: "+2 años de experiencia",
+  },
+  {
+    name: "Postgres SQL",
+    icon: "/skills/postgres.svg",
+    description: "+3 años de experiencia",
+  },
+  {
     name: "MySQL",
     icon: "/skills/mysql.svg",
     description: "+4 años de experiencia",
@@ -81,16 +84,6 @@ export const SKILLS = [
     description: "+3 años de experiencia",
   },
   {
-    name: "RUBY ON RAILS",
-    icon: "/skills/ruby.svg",
-    description: "+2 años de experiencia",
-  },
-  {
-    name: "Postgres SQL",
-    icon: "/skills/postgres.svg",
-    description: "+2 años de experiencia",
-  },
-  {
     name: "NODE.JS",
     icon: "/skills/node.svg",
     description: "+2 años de experiencia",
@@ -99,22 +92,7 @@ export const SKILLS = [
     name: "EXPRESS.JS",
     icon: "/skills/express.svg",
     description: "+2 años de experiencia",
-  },
-  {
-    name: "ANGULAR",
-    icon: "/skills/angular.svg",
-    description: "+2 años de experiencia",
-  },
-  {
-    name: "DJANGO",
-    icon: "/skills/django.svg",
-    description: "+1 años de experiencia",
-  },
-  {
-    name: "LARAVEL",
-    icon: "/skills/laravel.svg",
-    description: "+1 años de experiencia",
-  },
+  }
 ];
 
 export const PROJECTS = [
@@ -148,7 +126,8 @@ export const DOCUMENTATIONS = [
   {
     URL: {
       name: "URL Shortener",
-      description: "Sistema de acortamiento de URL con sistema de autenticación y gestión de usuarios. Cuenta con un panel de administración para gestionar las URL, usuarios y suscripciones.",
+      description:
+        "Sistema de acortamiento de URL con sistema de autenticación y gestión de usuarios. Cuenta con un panel de administración para gestionar las URL, usuarios y suscripciones.",
       image: "/projects/project1.png",
       techs: [".NET", "React", "Next.js", "Postgres SQL"],
       link: "https://assets-global.website-files.com/622fbc5a718ac357e4cd3da3/623227a7644f41349873cd60_defi-thumbnail-image-developer-webflow-ecommerce-template-p-500.png",
@@ -174,6 +153,6 @@ export const DOCUMENTATIONS = [
           },
         },
       },
-    }
+    },
   },
 ];

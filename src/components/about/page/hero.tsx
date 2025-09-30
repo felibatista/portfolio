@@ -26,15 +26,18 @@ export function AboutPageHero() {
             Mi vida en detalle
           </h1>
 
-          <img src="/underlines/cyan.png" alt=""
+          <img
+            src="/underlines/cyan.png"
+            alt="Felipe Batista desarrollador"
             className="absolute bottom-0 left-[50%] translate-x-[-50%] md:translate-x-0 md:left-[23vh] h-[3vh] w-[70vh] md:hidden md:w-[35vh] opacity-30 md:opacity-50 z-[10]"
           />
         </div>
         <p className="mt-4 text-description-sm md:text-description text-center flex h-fit max-w-[800px]">
-          Me llamo Felipe Batista, tengo 19 años y soy de Argentina. Soy una
-          persona que le gusta mucho la tecnología y la programación.
-          Actualmente estoy estudiando en la universidad la carrera de
-          Tecnicatura en Programación.
+          Me llamo Felipe Batista, tengo 21 años y soy de
+          Argentina. Soy Backend Developer con más de 4 años de experiencia
+          especializado en Spring Boot, .NET y Java. Apasionado por la
+          tecnología y la programación desde los 13 años. Actualmente estoy trabajando como desarrollador
+          freelance y en relación de dependencia.
         </p>
         <button
           onClick={() => {
