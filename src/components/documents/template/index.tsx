@@ -1,3 +1,5 @@
+"use client";
+
 import Section from "@/components/section";
 
 import { NavbarTemplate } from "@/components/navbar/template";

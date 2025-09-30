@@ -1,3 +1,5 @@
+"use client";
+
 import { ArrowRightIcon, ThickArrowRightIcon } from "@radix-ui/react-icons";
 import Section from "../section";
 import { DocumentsProjectCard } from "./project-card";
