@@ -148,9 +148,9 @@ export default function RootLayout({
         />
         <SEOFAQData />
         <script
-          src="https://api-production-fa8b.up.railway.app/script/index.js"
-          data-token="XZdd2U"
-          data-api="https://api-production-fa8b.up.railway.app"
+          src="https://api-clockech.felibatista.lat/script/index.js"
+          data-token="q81ulA"
+          data-api="https://api-clockech.felibatista.lat"
           async
         />
         <link rel="canonical" href="https://felibatista.lat" />
